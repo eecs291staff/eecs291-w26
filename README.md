@@ -17,6 +17,41 @@ git pull --ff-only
 - Released files will **not** be modified after publication. If a correction is
   needed, we will add new files and announce the update.
 
+## Quick start (Jupyter)
+
+Download the repo:
+
+```sh
+git clone https://github.com/eecs291staff/eecs291-w26.git eecs291-w26
+cd eecs291-w26
+```
+
+Create a virtual environment in the repo:
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Install Jupyter:
+
+```sh
+python -m pip install --upgrade pip
+pip install jupyter
+```
+
+Launch Jupyter and open/create notebooks:
+
+```sh
+jupyter notebook
+```
+
+Launch Jupyter for a specific notebook:
+
+```sh
+jupyter notebook lecture/<notebook-name>.ipynb
+```
+
 ## Repository layout
 
 - `lecture/` - Lecture notes and slide decks

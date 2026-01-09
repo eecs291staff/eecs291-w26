@@ -1,0 +1,2326 @@
+WEBVTT
+
+1
+00:00:49.210 --> 00:00:50.490
+Marcus M Darden: Keep your…
+
+2
+00:01:11.130 --> 00:01:13.209
+Marcus M Darden: Guidelines, folks.
+
+3
+00:01:17.450 --> 00:01:18.549
+Marcus M Darden: It's an item.
+
+4
+00:01:28.500 --> 00:01:29.909
+Marcus M Darden: A lot of parents.
+
+5
+00:01:34.870 --> 00:01:36.000
+Marcus M Darden: Alright.
+
+6
+00:01:36.200 --> 00:01:38.150
+Marcus M Darden: Oh man, it's been so long.
+
+7
+00:01:40.110 --> 00:01:40.780
+Marcus M Darden: That's fine.
+
+8
+00:01:42.440 --> 00:01:46.740
+Marcus M Darden: It's coming back to me, though. Oh, yeah, look at that! Now you can see the screen, it's everything.
+
+9
+00:01:52.700 --> 00:02:02.219
+Marcus M Darden: Okay, that's still a little dark, we'll have to deal with lights later. Might have some better lighting in the future, but these are going to be hard to see if there's lights over the top of them.
+
+10
+00:02:02.920 --> 00:02:04.010
+Marcus M Darden: It's capability.
+
+11
+00:02:05.950 --> 00:02:07.560
+Marcus M Darden: Tune Predictor…
+
+12
+00:02:40.620 --> 00:02:42.490
+Marcus M Darden: Don't kill you, Doc.
+
+13
+00:02:48.000 --> 00:02:50.669
+Marcus M Darden: Oh, look at that, there we go, some decent light.
+
+14
+00:02:51.510 --> 00:02:53.630
+Marcus M Darden: Alright, well…
+
+15
+00:03:05.340 --> 00:03:12.649
+Marcus M Darden: Doing weird things. Let's get started. I am Professor Darden. This is 291.
+
+16
+00:03:12.760 --> 00:03:21.719
+Marcus M Darden: This is the first time we've had this, and so it's a whole bunch of new stuff. This is gonna be, like, a wild semester for me, just so you know.
+
+17
+00:03:21.790 --> 00:03:40.239
+Marcus M Darden: Hopefully we won't break too many things, though it won't be for lack of trying. One of the things that we don't know, really, is just where people are in terms of their knowledge. So, how many of you have done stuff in Python in the past?
+
+18
+00:03:41.600 --> 00:03:46.750
+Marcus M Darden: A little bit, a lot, a course worth… Ish?
+
+19
+00:03:47.810 --> 00:03:49.600
+Marcus M Darden: Some, none? What about you?
+
+20
+00:03:50.030 --> 00:03:51.250
+Marcus M Darden: Anything?
+
+21
+00:03:51.870 --> 00:03:53.649
+Marcus M Darden: Python, have you done?
+
+22
+00:03:54.180 --> 00:03:56.999
+Marcus M Darden: Some? Yes, some. Okay.
+
+23
+00:03:57.560 --> 00:04:03.899
+Marcus M Darden: All right, well, yeah, that's where we don't know where to dial things in at, in terms of difficulty, so,
+
+24
+00:04:04.150 --> 00:04:13.000
+Marcus M Darden: We'll see if we have any issues along the way, just… just talk to me, right? We gotta know what we're shooting for.
+
+25
+00:04:13.170 --> 00:04:25.629
+Marcus M Darden: So, Rafe is on the end there, he's our actual staff member. The rest of those guys, they just hang out all the time, so… that's why, I don't know, I like… I like having them around, they're like…
+
+26
+00:04:25.700 --> 00:04:37.299
+Marcus M Darden: my hype squad, but they're always doing their own thing. But, yeah, so those three are just here for the fact that we're all here, so I don't know, they're used to hanging out with us in the afternoons, and here we are in class now.
+
+27
+00:04:37.950 --> 00:04:44.139
+Marcus M Darden: So Rafe will be working with you in… Office hours and in lab.
+
+28
+00:04:45.180 --> 00:04:53.119
+Marcus M Darden: And then the way that… We are going to be doing stuff through the course.
+
+29
+00:04:54.140 --> 00:04:57.590
+Marcus M Darden: many of these things, Rafe and I are still, like.
+
+30
+00:04:58.830 --> 00:05:06.609
+Marcus M Darden: hashing out on a daily basis, like, hey, check these slides out this morning, does this look like it's gonna make sense? And it's good. So,
+
+31
+00:05:11.130 --> 00:05:13.370
+Marcus M Darden: So here's where we're gonna start.
+
+32
+00:05:14.290 --> 00:05:16.359
+Marcus M Darden: Oh, sweet, just in time.
+
+33
+00:05:16.460 --> 00:05:31.739
+Marcus M Darden: We haven't gotten anything difficult yet. So I think at the cap, we're gonna have, like, 11 people, so I'm happy that you all are sitting in these front 4 or 5 rows, at least in the central section. It's always more work if I have to look farther to find what people are up for, so…
+
+34
+00:05:31.740 --> 00:05:38.640
+Marcus M Darden: If you can come in and sit in the first 4 or 5 rows here in the center every time, that would be greatly appreciated.
+
+35
+00:05:38.640 --> 00:05:47.720
+Marcus M Darden: Just in time to catch that message as well. So, 2, 4, 6, 8, and I think there's 11.
+
+36
+00:05:48.250 --> 00:05:54.250
+Marcus M Darden: or 13 and 3… how many are in… means a lot.
+
+37
+00:05:54.360 --> 00:05:57.209
+Marcus M Darden: So, there's a… is there 11 in 402?
+
+38
+00:05:58.080 --> 00:06:09.710
+Marcus M Darden: And how many in 291? 10 and 1. 10 and 1? Oh, okay. So it's 10 and 1. So, we're looking for 11 people total. Air play code. Put it in.
+
+39
+00:06:15.900 --> 00:06:22.180
+Marcus M Darden: This is 16… 70, right?
+
+40
+00:06:33.650 --> 00:06:36.900
+Marcus M Darden: 0833. Go.
+
+41
+00:06:42.910 --> 00:06:49.370
+Marcus M Darden: Hey! Alright. Okay, so, everything is gonna be run through Git.
+
+42
+00:06:49.730 --> 00:06:58.409
+Marcus M Darden: So, if you don't have Git skills, we need to get you there. Also, using GitHub.
+
+43
+00:06:59.060 --> 00:07:01.580
+Marcus M Darden: So, I was just in my office.
+
+44
+00:07:01.780 --> 00:07:08.819
+Marcus M Darden: And had a panic attack about 30 minutes ago, and I was like, I have no way to get them notebooks.
+
+45
+00:07:09.370 --> 00:07:25.159
+Marcus M Darden: So, I wrote this in short order. So here's the repo, and I'm gonna pull it up on screen and do it with you. So, if you've got a machine, break it out. If you don't have a command line version of this right now,
+
+46
+00:07:25.240 --> 00:07:32.190
+Marcus M Darden: That's gonna make things a little bit more difficult, but you can still do this on your own time here.
+
+47
+00:07:33.030 --> 00:07:39.950
+Marcus M Darden: How can they see… Notebooks on their… iPads.
+
+48
+00:07:42.680 --> 00:07:43.850
+Marcus M Darden: Okay.
+
+49
+00:07:45.000 --> 00:07:51.650
+Marcus M Darden: Well, there's a… there's a… there's an alternative to that. So I can take the notebooks and generate
+
+50
+00:07:52.580 --> 00:08:00.370
+Marcus M Darden: static slides. But the way that it's gonna work is, has anybody here used Jupyter Notebook with Python?
+
+51
+00:08:01.600 --> 00:08:04.000
+Marcus M Darden: Yes, everyone that's Pythoned?
+
+52
+00:08:04.640 --> 00:08:15.489
+Marcus M Darden: Okay, so for those of you who haven't and are just nodding to look like you're with the rest of the people, Jupyter Notebook is sort of a Python extension that allows you to have
+
+53
+00:08:15.720 --> 00:08:20.119
+Marcus M Darden: sort of text and Python in the same environment.
+
+54
+00:08:20.140 --> 00:08:36.000
+Marcus M Darden: And so, part of it is done in markdowns, you can get some nice presentable text, and then part of it is done in different cells where you can actually execute Python. So, that's what the notes are gonna be for this course, is gonna be Jupyter notebooks.
+
+55
+00:08:36.000 --> 00:08:43.049
+Marcus M Darden: But then additionally to that, you can add another extension to Jupyter Notebooks and make the Jupyter Notebook look like
+
+56
+00:08:43.419 --> 00:08:44.640
+Marcus M Darden: slides.
+
+57
+00:08:44.660 --> 00:09:00.140
+Marcus M Darden: So I'll be using that as slides, and what I'll be going through up here on the fronts, once we get you all in the same place, what I'll be going through on the fronts will be slides, but you'll have the actual notebooks so that you can truck through the notebook yourself.
+
+58
+00:09:00.140 --> 00:09:01.959
+Marcus M Darden: And add notes as you like.
+
+59
+00:09:01.960 --> 00:09:22.389
+Marcus M Darden: run stuff in the execution environment to make sure that things make sense, and everything will also happen to be… you do some commits and pushes so we can check to see what's going on, and that's just the general there. So, I've got a window open over here into my home directory, you can see it there, and then what I'm gonna do is…
+
+60
+00:09:22.390 --> 00:09:24.879
+Marcus M Darden: Get a copy of…
+
+61
+00:09:25.510 --> 00:09:33.530
+Marcus M Darden: this, which is our student materials repo, and so, if you go to this, I think you can see the address
+
+62
+00:09:34.220 --> 00:09:37.060
+Marcus M Darden: up there, no, you cannot. So…
+
+63
+00:09:37.520 --> 00:09:40.799
+Marcus M Darden: Let's go here and say that…
+
+64
+00:09:53.480 --> 00:09:56.000
+Marcus M Darden: That's the repo address.
+
+65
+00:09:56.700 --> 00:09:58.589
+Marcus M Darden: Right, so if you want to,
+
+66
+00:10:00.420 --> 00:10:06.330
+Marcus M Darden: Use that for later, or if you're putting that in notes, or it's gonna be useful to… you can even dial this up on your screen right now.
+
+67
+00:10:06.530 --> 00:10:15.480
+Marcus M Darden: That'll get you to this thing. It's a public repo, and the way that I will use it is I will put stuff in there for you, and then I will tell you that it's there.
+
+68
+00:10:16.390 --> 00:10:30.490
+Marcus M Darden: through, like, either an ed post, or we'll just have a regular schedule, so what happens, it'll be some combination of those things. When new lecture notes come out, I'll say they're there. You just go into your repo, you'll do a pull, and then you'll have the stuff.
+
+69
+00:10:30.980 --> 00:10:33.660
+Marcus M Darden: Right, if you make any edits.
+
+70
+00:10:34.240 --> 00:10:52.030
+Marcus M Darden: to your own notebooks locally, that's totally fine, because I won't be changing anything that I'm pushing out to you. So, as you make… as you make, as you make your own edits, as you add notes to the notes, it'd be perfectly fine. If I ever have to make any changes.
+
+71
+00:10:52.030 --> 00:10:56.279
+Marcus M Darden: then I'll have to send you something separate, so it'll be like.
+
+72
+00:10:57.080 --> 00:11:10.769
+Marcus M Darden: Lecture 4 update. So then you would pull that down, because if you get to writing on things, then I get to writing on things, then we have merge conflicts, and nobody wants to deal with that at that point. This is not that course.
+
+73
+00:11:11.230 --> 00:11:28.799
+Marcus M Darden: Alright, so, I'm over here, and I'm just gonna walk through this thing step by step. I'll put it up on the screen so you can see it. You can pull yours up on the screen if you want to, but here, down at the bottom, we've got this thing that says Quick Start in Jupyter. So, what I'm gonna do is I'm just gonna make…
+
+74
+00:11:29.030 --> 00:11:34.149
+Marcus M Darden: some directory to put stuff into, and so I'm gonna use the maker command.
+
+75
+00:11:34.790 --> 00:11:37.630
+Marcus M Darden: And I make this directory called courses.
+
+76
+00:11:37.750 --> 00:11:43.150
+Marcus M Darden: I'm gonna CD into that directory, maker equs 291…
+
+77
+00:11:43.270 --> 00:11:46.310
+Marcus M Darden: And I'm gonna change the directory into that directory.
+
+78
+00:11:46.920 --> 00:12:01.529
+Marcus M Darden: And then this, in my opinion, is where I'm gonna keep all the stuff from this course. I'll put the lecture stuff, or the course stuff from me, you'll have your own individual project directories in there, I'm not having you keep your project directories there, this is mostly just gonna be for…
+
+79
+00:12:02.100 --> 00:12:03.730
+Marcus M Darden: Back and forths and notes.
+
+80
+00:12:03.970 --> 00:12:19.809
+Marcus M Darden: So, from here, once I'm in this directory, or wherever you're feeling comfortable with storing all of your work for the semester at the top level, then we're gonna jump to this, this quick start here, and it says it wants me to clone something from that same address.
+
+81
+00:12:31.140 --> 00:12:36.340
+Marcus M Darden: So, there, it's cloned in. I can then change into that directory.
+
+82
+00:12:37.300 --> 00:12:53.129
+Marcus M Darden: As it says in this thing. And we'll talk about virtual environments in a little bit, but for right now, you've got to have one, and so we're gonna pull this off by running this next command, which says, use Python 3 to run this library named Venv.
+
+83
+00:12:54.330 --> 00:12:56.170
+Marcus M Darden: as a module.
+
+84
+00:12:56.470 --> 00:13:03.390
+Marcus M Darden: So, run that module, that's what the dash m is, and then what I want to do is I want to create a virtual environment in this
+
+85
+00:13:03.650 --> 00:13:13.030
+Marcus M Darden: hidden directory named .VENV. So, here I am in this directory, I just created a new environment, and you see if I type ls.
+
+86
+00:13:14.110 --> 00:13:16.729
+Marcus M Darden: I've got all of the stuff that I just cloned.
+
+87
+00:13:17.560 --> 00:13:38.000
+Marcus M Darden: But I also have that VEN directory, but because it's got a dot in front of it, Linux and Unix try to hide those things from you, so they're called hidden files. If I do an LS minus A, you'll see there's the Venv directory, this is where my environment is, and I can install things in there. There's the Git directory where all of the Git…
+
+88
+00:13:38.000 --> 00:13:38.920
+Marcus M Darden: Hard.
+
+89
+00:13:38.920 --> 00:13:44.040
+Marcus M Darden: links and all that stuff are. So, I've done that.
+
+90
+00:13:44.870 --> 00:13:54.220
+Marcus M Darden: And then what I want to do is activate that one, and you see, when I type source… BMV…
+
+91
+00:13:58.450 --> 00:14:02.600
+Marcus M Darden: Right? Doesn't do a whole lot, but look here.
+
+92
+00:14:04.860 --> 00:14:07.470
+Marcus M Darden: Now, before…
+
+93
+00:14:07.760 --> 00:14:15.540
+Marcus M Darden: my prompt just had whatever my system prompt was, and then my path, and then percent, but now I've got this…
+
+94
+00:14:15.890 --> 00:14:29.270
+Marcus M Darden: tag here that tells me that I'm in the virtual environment, and the name of it is .veenv. So, if you choose to name it anything else, you can. That's just a convention. You could name it
+
+95
+00:14:29.560 --> 00:14:39.880
+Marcus M Darden: 291, you could name it Thursdays, you can put whatever word you want in there, and then it will be in that directory here, and show up inside that thing there.
+
+96
+00:14:40.120 --> 00:14:45.309
+Marcus M Darden: Like I said, if you use a dot in front of it, then it typically hides, and you don't have to worry about seeing it.
+
+97
+00:14:46.240 --> 00:14:56.449
+Marcus M Darden: So once I've got that activated, now anything that I do to my Python or with my Python is using that particular Python.
+
+98
+00:14:56.900 --> 00:15:03.660
+Marcus M Darden: And this is important because system tools use Python on macOS.
+
+99
+00:15:04.010 --> 00:15:10.789
+Marcus M Darden: And so it's expecting a particular Python to be there. As different versions of Python get released.
+
+100
+00:15:11.010 --> 00:15:30.940
+Marcus M Darden: things get changed, and you wouldn't want your system to stop functioning, so you wouldn't want to make an update on your system Python that would prevent your system from working. Some plugins might no longer work once you get your Python to a certain area, so we use virtual environments to help us control exactly the Python and the extensions that we want.
+
+101
+00:15:30.940 --> 00:15:35.879
+Marcus M Darden: So right now, I just created this one, and then what I want to do is I want to
+
+102
+00:15:36.400 --> 00:15:41.719
+Marcus M Darden: Use the installer, which the easiest one to use in Python is called pip.
+
+103
+00:15:43.160 --> 00:15:45.210
+Marcus M Darden: PIP for…
+
+104
+00:15:46.550 --> 00:16:00.640
+Marcus M Darden: Python package installer… I forget, but it's what it does. You install packages. Python installer of packages? Why is it piv? Okay. So then, after I've done the activate command here.
+
+105
+00:16:01.110 --> 00:16:13.580
+Marcus M Darden: now I'm at this one right here. So I'm gonna say Python run the pip module with the command install and upgrade pip, so I make sure that I've got the most up-to-date version of pip.
+
+106
+00:16:13.810 --> 00:16:17.649
+Marcus M Darden: before I start using pip to install other packages.
+
+107
+00:16:22.970 --> 00:16:37.530
+Marcus M Darden: There we go. So, it went and did that, so now I've got the most up-to-date version of PIP 25.3 inside of this virtual environment. I could go into another virtual environment, and I wouldn't have pip 25.3. I'd have something else.
+
+108
+00:16:38.240 --> 00:16:47.070
+Marcus M Darden: Alright, so once pip's up to date, then I can use pip to install Jupyter. Pip install Jupyter…
+
+109
+00:16:47.770 --> 00:16:58.990
+Marcus M Darden: And obviously, it's got the Python little hook in there, J-U-P-Y-T-R, but it's still pronounced Jupiter, not Jupiter.
+
+110
+00:16:59.960 --> 00:17:16.130
+Marcus M Darden: Alright, so a bunch of stuff flies through the screen, you see it just installed a whole bunch of stuff, but all of that stuff is installed into this virtual environment, not into my system. So if I deactivate this environment, which… which is a thing you can do, right? If I just type deactivate.
+
+111
+00:17:16.930 --> 00:17:19.950
+Marcus M Darden: you see that I no longer have
+
+112
+00:17:20.369 --> 00:17:26.470
+Marcus M Darden: this .vn in front of it. So now I'm back in my top-level environment, and…
+
+113
+00:17:26.720 --> 00:17:30.290
+Marcus M Darden: that Jupyter that I just installed is not available.
+
+114
+00:17:30.660 --> 00:17:36.550
+Marcus M Darden: Right? So… if I type Jupiter… notebook.
+
+115
+00:17:38.190 --> 00:17:52.420
+Marcus M Darden: It's gonna be like, I don't know what Jupyter is. So you might come into this later, if you come away from your work and you come and try to get back to it, and you forget to activate. So you go into that directory, and then you have to run that command, which looks like source.
+
+116
+00:17:53.460 --> 00:18:00.630
+Marcus M Darden: dot Venv bin activate, because that's the path to it, and once I do that, you see I get my…
+
+117
+00:18:01.140 --> 00:18:05.249
+Marcus M Darden: environment tag back on there. So now, if I say Jupyter Notebook.
+
+118
+00:18:06.790 --> 00:18:09.070
+Marcus M Darden: It says, hey, I know how to do that.
+
+119
+00:18:12.570 --> 00:18:13.770
+Marcus M Darden: And…
+
+120
+00:18:14.090 --> 00:18:27.409
+Marcus M Darden: it kicks it off. So this is a program that's running in my terminal, so now my terminal, I can't really use it, because it's using it as… for output of this problem, so… and that's okay, because we're done working in the terminal anyway. But here, you'll see is…
+
+121
+00:18:28.090 --> 00:18:30.529
+Marcus M Darden: It popped open a window for me.
+
+122
+00:18:30.760 --> 00:18:34.869
+Marcus M Darden: And you can see that I'm a bit of a tabaholic, but…
+
+123
+00:18:35.120 --> 00:18:38.489
+Marcus M Darden: I'm in counseling, hopefully one day I'll be okay.
+
+124
+00:18:41.520 --> 00:18:48.200
+Marcus M Darden: So, there we are, and this is the stuff that we just downloaded, and this is… this repo.
+
+125
+00:18:48.790 --> 00:18:57.029
+Marcus M Darden: but delivered through Jupyter Notebook. There's nothing in any of those files, except lecture, We go into lecture.
+
+126
+00:18:58.010 --> 00:19:00.220
+Marcus M Darden: There's Lecture 0.
+
+127
+00:19:01.020 --> 00:19:04.239
+Marcus M Darden: And once I kick that off, that's what it looks like.
+
+128
+00:19:04.590 --> 00:19:07.920
+Marcus M Darden: So this is the view that you would have.
+
+129
+00:19:08.820 --> 00:19:14.510
+Marcus M Darden: Now, if you want to install Rise, you can, so you can look at this in Slides version, but…
+
+130
+00:19:15.730 --> 00:19:30.959
+Marcus M Darden: you don't have to. You can just go in here, and each one of these cells, if I use my arrow keys up and down, it can move me through this, and it's gonna be the notes, and you'll see these are all just markdown cells, because they look like nice web page stuff. Then we get into stuff like that, that's an actual
+
+131
+00:19:30.960 --> 00:19:36.059
+Marcus M Darden: Python cell, and I can run the stuff in there, and that's… that's what we'll be doing. But,
+
+132
+00:19:36.740 --> 00:19:39.490
+Marcus M Darden: That's where we are.
+
+133
+00:19:40.150 --> 00:19:43.309
+Marcus M Darden: I think my next thing that I have to do is…
+
+134
+00:19:46.430 --> 00:20:05.869
+Marcus M Darden: I actually need to leave Jupyter Notebook as you guys are running it, because I need to run a different one. So when you want to get out of this, you can go into your Jupyter Notebook, and you can go back to the file view, like, see, there's the other window. When I opened up the notebook, it opens up in another tab. I can close this tab.
+
+135
+00:20:06.210 --> 00:20:09.400
+Marcus M Darden: And any changes that I make can be saved in there or not.
+
+136
+00:20:10.460 --> 00:20:20.170
+Marcus M Darden: But… it still hasn't left Jupyter. So Jupiter is still running in another tab, so if I want to get out of that, I can come here and,
+
+137
+00:20:20.390 --> 00:20:23.729
+Marcus M Darden: I can get out of this if I want to, if I go into File…
+
+138
+00:20:23.980 --> 00:20:36.729
+Marcus M Darden: shut down the server, right? So that'll shut down the local server that's running the Jupyter Notebook. It doesn't do anything to the tab, so the tab still sits there and looks like I can use it, but I can't, so,
+
+139
+00:20:37.230 --> 00:20:40.349
+Marcus M Darden: I won't. But if I look into,
+
+140
+00:20:40.930 --> 00:20:45.310
+Marcus M Darden: this, then, you'll see that I get my prompt back. It's shut down.
+
+141
+00:20:45.750 --> 00:20:51.799
+Marcus M Darden: Alright, the reason why I can't do it is I need some other extensions in there, and if I go here…
+
+142
+00:20:51.940 --> 00:20:55.589
+Marcus M Darden: That's really what I want. So I'm gonna say Jupyter Notebook.
+
+143
+00:20:55.920 --> 00:20:58.790
+Marcus M Darden: And… What's different?
+
+144
+00:21:00.090 --> 00:21:09.339
+Marcus M Darden: just my environment. I'm in the same directory. I'm in a different terminal, but it's the same directory, it's EX291 Winter 26, but you see I'm in this…
+
+145
+00:21:10.680 --> 00:21:12.409
+Marcus M Darden: Practical data science.
+
+146
+00:21:13.000 --> 00:21:21.549
+Marcus M Darden: from the 398 course. I'm in their, environment because it was nicely set up, and I liked it. So now when I run Jupyter Notebook.
+
+147
+00:21:22.000 --> 00:21:31.040
+Marcus M Darden: does about the same thing. Starts up Jupyter Notebook. But I can get into this… Notebook here, and…
+
+148
+00:21:32.260 --> 00:21:33.990
+Marcus M Darden: Remember how I do this.
+
+149
+00:21:39.840 --> 00:21:45.819
+Marcus M Darden: Gotta do a few little… windows that I have to.
+
+150
+00:21:54.080 --> 00:21:58.099
+Marcus M Darden: Alright. Right? So this is what you see in your notebook.
+
+151
+00:21:58.640 --> 00:21:59.690
+Marcus M Darden: But…
+
+152
+00:22:00.230 --> 00:22:10.619
+Marcus M Darden: it looks nicer, looks slides-like. So, if you guys are gonna be using tablets, then I can probably just export this to…
+
+153
+00:22:12.200 --> 00:22:13.840
+Marcus M Darden: I can export these things.
+
+154
+00:22:16.020 --> 00:22:17.790
+Marcus M Darden: I can do that right now.
+
+155
+00:22:28.400 --> 00:22:31.850
+Marcus M Darden: I know that's a doable thing. If you see it, shout it out.
+
+156
+00:22:48.990 --> 00:22:53.460
+Marcus M Darden: You download as, I think? Download as, oh, nice, thank you.
+
+157
+00:22:53.730 --> 00:23:03.180
+Marcus M Darden: Download as… slides… Yeah?
+
+158
+00:23:03.510 --> 00:23:08.720
+Marcus M Darden: What do you think? Maybe PDF. PDF, also a good thing.
+
+159
+00:23:09.750 --> 00:23:12.089
+Marcus M Darden: A number of HGMOs of this community.
+
+160
+00:23:12.680 --> 00:23:16.310
+Marcus M Darden: Oh, bail! Okay, well…
+
+161
+00:23:16.830 --> 00:23:22.469
+Marcus M Darden: I have to install PyQt Web Engine, so I guess we will not be going through
+
+162
+00:23:30.180 --> 00:23:37.740
+Marcus M Darden: like I said, we're going to be breaking some things in this class. Starts on day one.
+
+163
+00:23:45.210 --> 00:23:48.929
+Marcus M Darden: Hey, there we go. Lecture introduction HTML.
+
+164
+00:23:49.230 --> 00:23:51.709
+Marcus M Darden: We would want to stick that in.
+
+165
+00:23:52.200 --> 00:23:55.450
+Marcus M Darden: Let's go here, let's go there…
+
+166
+00:23:55.790 --> 00:24:00.180
+Marcus M Darden: Let's put it in here. Let's put it in there.
+
+167
+00:24:00.490 --> 00:24:03.829
+Marcus M Darden: And save it. Another bride.
+
+168
+00:24:04.220 --> 00:24:06.559
+Marcus M Darden: Hop over to our trusty Git.
+
+169
+00:24:22.870 --> 00:24:27.409
+Marcus M Darden: And HTML version. Sure.
+
+170
+00:24:33.430 --> 00:24:47.930
+Marcus M Darden: Okay, so… now it looks like if you go into… this directory in the GitHub, lecture…
+
+171
+00:24:53.400 --> 00:24:55.130
+Marcus M Darden: Well, that's not helpful, is it?
+
+172
+00:24:55.450 --> 00:24:57.929
+Marcus M Darden: I want to see the actual HTML.
+
+173
+00:24:58.070 --> 00:25:00.759
+Marcus M Darden: I want to open the HTML.
+
+174
+00:25:20.070 --> 00:25:22.060
+Marcus M Darden: And I just opened it in…
+
+175
+00:25:29.740 --> 00:25:32.290
+Marcus M Darden: She fails left and right.
+
+176
+00:25:32.400 --> 00:25:33.490
+Marcus M Darden: Alright.
+
+177
+00:25:42.370 --> 00:25:44.789
+Marcus M Darden: You might be able to pick up, like, a browser.
+
+178
+00:25:46.550 --> 00:25:49.290
+Marcus M Darden: I don't think you'll be able to, like, export it to, like, a notes.
+
+179
+00:25:58.580 --> 00:26:02.180
+Marcus M Darden: Might be able to. Seems like a reasonable thing to do, wouldn't it?
+
+180
+00:26:15.030 --> 00:26:17.180
+Marcus M Darden: How do I get it here?
+
+181
+00:26:28.130 --> 00:26:33.420
+Marcus M Darden: What do you think? If you go to your Finder, where the file is, you can probably open with Chrome.
+
+182
+00:26:35.700 --> 00:26:37.089
+Marcus M Darden: Give it a try.
+
+183
+00:26:40.170 --> 00:26:43.160
+Marcus M Darden: Then the question is, where did I put it?
+
+184
+00:26:45.850 --> 00:26:47.220
+Marcus M Darden: what did I call it?
+
+185
+00:26:48.000 --> 00:26:48.950
+Marcus M Darden: Oops.
+
+186
+00:27:03.080 --> 00:27:04.440
+Marcus M Darden: There it is.
+
+187
+00:27:07.610 --> 00:27:11.699
+Marcus M Darden: It's another editor. Hey, you really want to edit this file, don't you?
+
+188
+00:27:13.740 --> 00:27:15.709
+Marcus M Darden: Okay, it's gonna have to be slides.
+
+189
+00:27:16.070 --> 00:27:18.439
+Marcus M Darden: Sorry, I don't know.
+
+190
+00:27:25.150 --> 00:27:26.329
+Marcus M Darden: It's always something.
+
+191
+00:27:26.630 --> 00:27:28.569
+Marcus M Darden: Okay, well…
+
+192
+00:27:40.630 --> 00:27:43.570
+Marcus M Darden: Yeah, I don't know.
+
+193
+00:28:07.520 --> 00:28:15.260
+Marcus M Darden: Yeah, sorry about that one. I will have to track that down. I guess that's all I got. So, let's get back at it. I gotta get this going.
+
+194
+00:28:16.730 --> 00:28:18.650
+Marcus M Darden: So I'm over here, and…
+
+195
+00:28:20.850 --> 00:28:24.859
+Marcus M Darden: Did I start that notebook up? No, I did. It's already started. There we go.
+
+196
+00:28:36.640 --> 00:28:37.710
+Marcus M Darden: slides.
+
+197
+00:28:42.230 --> 00:28:47.459
+Marcus M Darden: A lot of work to get to slide 1. Sorry about that, but we're here now.
+
+198
+00:28:48.190 --> 00:28:52.789
+Marcus M Darden: How did everybody else do it? Everybody else that's got command line, did that go okay?
+
+199
+00:28:54.100 --> 00:28:55.170
+Marcus M Darden: It's good.
+
+200
+00:28:55.410 --> 00:29:03.119
+Marcus M Darden: Slight nods work. Alright, we gotta get them up and going. Oh, I thought that was an iPad, so that's actually a keyboard.
+
+201
+00:29:03.350 --> 00:29:07.149
+Marcus M Darden: Oh, you switched on me. Good. I see, I see. All right.
+
+202
+00:29:07.370 --> 00:29:11.600
+Marcus M Darden: Alright, we'll get you right here. I'll have to…
+
+203
+00:29:12.490 --> 00:29:17.559
+Marcus M Darden: Can you see if you can figure out how to… I put it in those videos. Oh, you did? Oh, nice.
+
+204
+00:29:18.430 --> 00:29:21.580
+Marcus M Darden: Okay, so you should be able to go back to that location.
+
+205
+00:29:21.760 --> 00:29:25.569
+Marcus M Darden: And… There it is!
+
+206
+00:29:29.980 --> 00:29:39.290
+Marcus M Darden: Of course. Okay, so yeah, download that, and then you should be able to open up the PDF in Notability, or whatever you're annotating with. You can at least
+
+207
+00:29:39.690 --> 00:29:40.959
+Marcus M Darden: Go to work on it.
+
+208
+00:29:41.650 --> 00:29:44.350
+Marcus M Darden: Nice. Thanks, Ray. Good save.
+
+209
+00:29:47.040 --> 00:29:49.470
+Marcus M Darden: So much more colorful over here, though.
+
+210
+00:29:52.360 --> 00:29:59.760
+Marcus M Darden: Alright, so, yes, we are into 91. We are 29 minutes into our first
+
+211
+00:30:00.010 --> 00:30:04.870
+Marcus M Darden: half of… half one course structure and policies.
+
+212
+00:30:05.100 --> 00:30:07.470
+Marcus M Darden: It always ends up this way, we're gonna be gone.
+
+213
+00:30:09.100 --> 00:30:10.940
+Marcus M Darden: Close that up. Alright.
+
+214
+00:30:12.090 --> 00:30:18.940
+Marcus M Darden: 80 minutes split in half, like I said, we've already used 29 of the first 40, just getting to slide 2.
+
+215
+00:30:19.360 --> 00:30:27.959
+Marcus M Darden: But we'll be okay. Maybe the break won't be quite at the midpoint, and then, the work that you do, we're just gonna try to get you to commit something.
+
+216
+00:30:28.690 --> 00:30:30.160
+Marcus M Darden: On your own local.
+
+217
+00:30:30.500 --> 00:30:31.550
+Marcus M Darden: Alright.
+
+218
+00:30:32.050 --> 00:30:49.539
+Marcus M Darden: We'll send some more information later over the ed about how to get some connection with us. We'll get that figured out. It's good. So, we're going to talk about the course structure and policies, just so we know how things work, and what a good day ends up looking like.
+
+219
+00:30:54.480 --> 00:31:13.720
+Marcus M Darden: The course focus is applied first, so this is why it's not a CS major course. The major course, EX281, is similar. We… as… before we had a course number for this course, we called this course, you know, its nickname was PI81, so it's the 281 course.
+
+220
+00:31:13.820 --> 00:31:29.690
+Marcus M Darden: in Python, which is close to correct, because it's generally the same material, but like I said, because it's less theoretical and a bit more applied, it's just more approachable, and it's less something that majors need, and so the majors can't take it for credit.
+
+221
+00:31:29.690 --> 00:31:37.649
+Marcus M Darden: So, we'll be doing this, and I teach 281 and have taught 281 every semester I've been here since…
+
+222
+00:31:38.100 --> 00:31:41.800
+Marcus M Darden: Back in… the teens…
+
+223
+00:31:41.910 --> 00:31:48.900
+Marcus M Darden: So, I do this stuff back and forth. I do the theoretical version in the mornings. From 10.30 to 12, I talk…
+
+224
+00:31:49.230 --> 00:31:55.049
+Marcus M Darden: data structures and algorithms in C++, and then 3 to 4.30, I'll be teaching it here in Python.
+
+225
+00:31:57.160 --> 00:32:02.109
+Marcus M Darden: Here's who we're looking at, people who have already had some CS2.
+
+226
+00:32:02.170 --> 00:32:15.729
+Marcus M Darden: So, one of the CS2s that you can take, the undergrad version, is EX280. The grad student version is EX 402, so if you haven't had any other stuff, you might want to take one of those before this course.
+
+227
+00:32:15.730 --> 00:32:30.030
+Marcus M Darden: But it's intended for CS minors, DS grad students, and others who want to get some more programming, but can't necessarily maybe want to take the full 281, or can't take the 281. So, CS majors can take the course, but it won't count towards their major.
+
+228
+00:32:31.270 --> 00:32:48.160
+Marcus M Darden: We're gonna break the course into these four quarters. I was trying to keep things really regular, with a pace that you can get attached to, and then know how things are gonna go. And so, the semester divided up pretty nicely into what looked like quarters.
+
+229
+00:32:48.380 --> 00:33:00.800
+Marcus M Darden: So, in terms of a year, it's more like an eighth, obviously. Some schools have quarters where a quarter means the entire calendar year, but these are quarters within the semester, and each quarter has got two labs.
+
+230
+00:33:01.070 --> 00:33:04.090
+Marcus M Darden: One project, and an exam.
+
+231
+00:33:07.260 --> 00:33:12.999
+Marcus M Darden: So you can think of those as being, I think it's 6 lectures per quarter.
+
+232
+00:33:13.260 --> 00:33:19.489
+Marcus M Darden: So we'll have 4 lectures, and those are gonna be the more applied lectures.
+
+233
+00:33:19.820 --> 00:33:32.189
+Marcus M Darden: The stuff that is going to help you with the project during those two weeks of the four lectures, we'll also have the two labs, and then in the third week of the quarter, there'll be no lab.
+
+234
+00:33:32.960 --> 00:33:46.919
+Marcus M Darden: And there'll be more theoretical material, a little bit light, but that's the stuff that's not going to be touched very heavily on the exam. So, the applied stuff will be on the exam, so it's not like we're gonna have a class
+
+235
+00:33:47.060 --> 00:33:54.649
+Marcus M Darden: the day before the exam, and then you're going to be tested on that stuff. So, they're trying to make this fair. So, that last two lectures of every quarter.
+
+236
+00:33:56.470 --> 00:34:09.779
+Marcus M Darden: very little, if anything, of that will be on the exam. Maybe a little bit, but it's not going to be deep theory attack, and that's what the… even there, the material is not supposed to be deep theory, it's supposed to be light theory, so you've got some of the background on it.
+
+237
+00:34:09.920 --> 00:34:28.050
+Marcus M Darden: So that's how it goes. In quarter one, we're going to be talking about contiguous data structures and hashing, then we'll get into sorting and priority queues, trees and graphs, and then some other higher-level algorithms, including graph algorithms and optimization stuff. That's the way the four quarters will go. There's going to be one exam for each quarter.
+
+238
+00:34:30.370 --> 00:34:33.300
+Marcus M Darden: So there's 10 of them, sorry, 10 points.
+
+239
+00:34:33.449 --> 00:34:48.590
+Marcus M Darden: Four of them, that's 40% of the grade. And each one of those exams is going to be basically over that quarter's material. So it's not going to be cumulative, though you may have learned something in a previous quarter that you just need as foundational knowledge.
+
+240
+00:34:48.590 --> 00:35:02.679
+Marcus M Darden: The questions won't be directed toward the lecture material from another quarter. They'll be directed toward material from the current quarter, and there may be some additional support from there that you need. Eight labs, like I said, two per quarter.
+
+241
+00:35:02.680 --> 00:35:16.710
+Marcus M Darden: 2.5% each, that's 20% of your total grade. There's 4 projects, 10% each, and that's 40% of your grade. So there's our even 100. We should be able to get there. We've got some minimum competency. We like to…
+
+242
+00:35:16.960 --> 00:35:21.839
+Marcus M Darden: Make sure that you can do This course 3 different ways.
+
+243
+00:35:22.380 --> 00:35:26.120
+Marcus M Darden: You can do stuff with the projects, that means you can actually code.
+
+244
+00:35:26.700 --> 00:35:37.640
+Marcus M Darden: when you can pass exams, that means you know something, so you can do something, you can know something. And then, the labs are gonna be mostly about showing up and just getting after it, so…
+
+245
+00:35:38.200 --> 00:35:49.800
+Marcus M Darden: that one is really, can I get ahold of you? So if I can get ahold of you and make sure that you show up and stay on track with what we're doing, then that should be pretty easy to accomplish there.
+
+246
+00:35:50.000 --> 00:35:50.940
+Marcus M Darden: Alright?
+
+247
+00:35:51.720 --> 00:35:52.630
+Marcus M Darden: Rockin'.
+
+248
+00:35:54.260 --> 00:35:57.459
+Marcus M Darden: The labs are gonna be worksheet-driven, we think.
+
+249
+00:35:57.750 --> 00:35:58.809
+Marcus M Darden: We'll see.
+
+250
+00:35:59.270 --> 00:36:09.670
+Marcus M Darden: We're still working on this. Like I said, we've got some time. Each student is going to submit their own work. You can work in pairs, if you want to, in labs.
+
+251
+00:36:09.730 --> 00:36:28.060
+Marcus M Darden: in the projects, you gotta write your own stuff, but you can work with a partner in labs, you don't have to worry about registering your partnership. You could maybe include your partner's name in your comments if there's code, but everybody has to turn in their own thing, so then we don't have to worry about trying to figure out which one thing that we graded gets divided into two layers of the…
+
+252
+00:36:28.390 --> 00:36:36.430
+Marcus M Darden: gradebook. So, just submit your own work, even if it's an exact copy of your partner's, that's fine. We won't be doing any cheat checking on that.
+
+253
+00:36:37.280 --> 00:36:51.379
+Marcus M Darden: Anything late for lab, we're just gonna knock 50% of it off, but that shouldn't be too difficult, because labs are going to be divided into multiple parts, usually like a worksheet, maybe some problems to work on, a quiz, or something like that, so if you take those.
+
+254
+00:36:51.810 --> 00:36:58.910
+Marcus M Darden: You know, 2.5%, and divide that into one or two different things, or two or three different things, like…
+
+255
+00:36:59.010 --> 00:37:01.040
+Marcus M Darden: So, each part is gonna be, like.
+
+256
+00:37:01.260 --> 00:37:22.040
+Marcus M Darden: 1% of your grade, and so if that ends up late, and you lose half a percent of your grade, it's not that big a deal. You could have done better, you could have got it there on time, but we don't need to be working back and forth about trying to contact me, and let's have a discussion about why you were late, and why I should definitely give you all the points, and just do it on time, or be okay with losing half a percent.
+
+257
+00:37:22.170 --> 00:37:23.190
+Marcus M Darden: Sound good?
+
+258
+00:37:23.700 --> 00:37:25.179
+Marcus M Darden: Trying to make this easy.
+
+259
+00:37:26.000 --> 00:37:40.120
+Marcus M Darden: All the lab pieces are due by 11.59, the day before the exam. So, I mean, it's kind of a tight schedule. If we have some real friction, we're there, let me know. Like I said, this is an experimental sort of approach to this course. Normally, this would have been a…
+
+260
+00:37:41.050 --> 00:37:51.050
+Marcus M Darden: 298, but… $3.98, but they wanted it right away, so here it is, live and active. No lab drops, you have to do them all. There's only 8 of them. Oh, oh, oh, oh!
+
+261
+00:37:51.300 --> 00:37:52.660
+Marcus M Darden: Why did you do that?
+
+262
+00:37:54.850 --> 00:37:57.690
+Marcus M Darden: Okay, it's back. I don't know what I did, so…
+
+263
+00:37:58.420 --> 00:38:00.970
+Marcus M Darden: Like I said, I've been using PowerPoint.
+
+264
+00:38:01.590 --> 00:38:03.000
+Marcus M Darden: 281 all the time.
+
+265
+00:38:03.180 --> 00:38:07.620
+Marcus M Darden: So here's the projects. They're 2 weeks, 2 weeks-ish?
+
+266
+00:38:09.780 --> 00:38:24.630
+Marcus M Darden: Steady progress is expected. We're gonna get an autograder up and running for you to put submissions into. The autograder should give you some feedback, what tests you're passing, what things work, what things don't. And we'll give you a couple of late days for projects.
+
+267
+00:38:25.030 --> 00:38:30.949
+Marcus M Darden: So, you can extend the project by a day, you're gonna have to probably email us to get that done.
+
+268
+00:38:31.510 --> 00:38:44.349
+Marcus M Darden: We'll figure that out, too. But the final grading run that we're gonna use will not give you the tests that you had already been practicing with, that's just to make sure that, everything actually works and it's not been coded to the test.
+
+269
+00:38:44.760 --> 00:38:46.750
+Marcus M Darden: Pre-deadline score counts.
+
+270
+00:38:46.950 --> 00:38:54.099
+Marcus M Darden: That's the… that's the one we're gonna use, the best pre-deadline score, that's the… the version of the exam that we're gonna… or, sorry, the project that we're gonna grade.
+
+271
+00:38:55.410 --> 00:39:08.750
+Marcus M Darden: The exams. Now, this is a new thing here. We've put in what's called the computer-based testing facility, and it is over in the Duderstadt building, down in the basement.
+
+272
+00:39:08.750 --> 00:39:22.549
+Marcus M Darden: And it's, like a standard computer lab, it's got a bunch of computers in there, but it runs tests. So you'll be able to go in there and take your test. Right now, I was able to let them give me space
+
+273
+00:39:22.640 --> 00:39:25.300
+Marcus M Darden: During our lecture.
+
+274
+00:39:25.790 --> 00:39:39.319
+Marcus M Darden: So, the days that we will be having exams, we won't have lecture, you'll just go to the CBTF, one of us or both of us will meet you there, and then you'll sit in a room, you'll take a test on a computer, and…
+
+275
+00:39:39.770 --> 00:39:47.090
+Marcus M Darden: it'll be fine, right? So, it'll be a multiple-choice test, and one…
+
+276
+00:39:48.260 --> 00:39:56.369
+Marcus M Darden: coding problem. That's how I'm looking at doing it. So, this is closed book. You can take a sheet of notes if you need it.
+
+277
+00:39:56.790 --> 00:40:06.489
+Marcus M Darden: And the released exam days, like it says, no regular lecture, but you'll just be going there. So, the other thing is the fourth exam is gonna show up
+
+278
+00:40:06.900 --> 00:40:10.639
+Marcus M Darden: during… The final exam slot.
+
+279
+00:40:11.890 --> 00:40:19.470
+Marcus M Darden: But it won't be a cumulative final exam. It's just gonna be the fourth exam. So it's just gonna be the exam over the fourth quarter.
+
+280
+00:40:19.990 --> 00:40:28.149
+Marcus M Darden: We may find a way to use up a little bit extra time, because you will… I mean, we will be… we'll be in a room, so we're going to be doing the fourth exam on paper.
+
+281
+00:40:30.180 --> 00:40:46.070
+Marcus M Darden: Fourth exam's gonna be done on paper, but we won't… because there's just too many people to try to use the one facility with 25 or 30 seats for finals. So, we'll do the fourth one, during the registrar final exam period in the room that they give us, and that'll be that.
+
+282
+00:40:46.520 --> 00:40:48.749
+Marcus M Darden: Any questions on that? Is that making sense?
+
+283
+00:40:50.270 --> 00:41:02.089
+Marcus M Darden: Sweet. At some point… yeah. Does the fourth exam, let's just stop coding as well? Like, it will be pen and paper, right? Yes, it will be pen and paper. You're gonna have to write some code.
+
+284
+00:41:02.090 --> 00:41:13.679
+Marcus M Darden: On a piece of paper. But, I mean, the problems are, you know, 15, 20 lines, and you won't… you won't have done much of it. But one of the things that we usually do in
+
+285
+00:41:13.850 --> 00:41:19.920
+Marcus M Darden: 281 Labs is we do some practice writing code on paper.
+
+286
+00:41:20.160 --> 00:41:37.990
+Marcus M Darden: as your… as your worksheet turn-ins, just so you have practice, and you've never written a function with a pencil in your life, I'd imagine, right? Very few people have. So, if you do that 3 or 4 times in lab, we'll… we'll figure it out. We'll figure it out. I don't know, maybe we could… and the other alternative is we could see if we could get
+
+287
+00:41:39.840 --> 00:41:45.320
+Marcus M Darden: the CBTF… Like, the last day of classes.
+
+288
+00:41:47.670 --> 00:42:01.149
+Marcus M Darden: And then there would just be no final exam. So, if you're interested in that, let's… let's have a conversation on Ed and see what people think about that, if you want to keep going, and then we can just do it all computer, and then I'll also have to talk to them to see if I can get that day. But,
+
+289
+00:42:01.400 --> 00:42:04.180
+Marcus M Darden: Let's get that conversation started, and we'll figure out what we're gonna do.
+
+290
+00:42:04.390 --> 00:42:05.370
+Marcus M Darden: Make sense?
+
+291
+00:42:07.200 --> 00:42:08.110
+Marcus M Darden: Good-ish.
+
+292
+00:42:10.130 --> 00:42:15.339
+Marcus M Darden: What's that? Okay-ish, okay, alright. Like I said, we're gonna break some stuff around here.
+
+293
+00:42:17.710 --> 00:42:21.620
+Marcus M Darden: Academic integrity and AI policy.
+
+294
+00:42:23.580 --> 00:42:27.600
+Marcus M Darden: So I'm sure you've heard it all about the AI at this point.
+
+295
+00:42:28.210 --> 00:42:33.679
+Marcus M Darden: I am a huge fan And super proponent.
+
+296
+00:42:34.770 --> 00:42:44.569
+Marcus M Darden: But… I'm also… convinced That you have to be able to code to do this.
+
+297
+00:42:44.870 --> 00:42:49.950
+Marcus M Darden: Right? So… one of the things that…
+
+298
+00:42:50.190 --> 00:42:55.499
+Marcus M Darden: you know, we saw early on, when AI came on us.
+
+299
+00:42:55.940 --> 00:43:09.079
+Marcus M Darden: is people stopped hiring, and people started getting laid off, and in CS, and in other fields all across the country. It's like, we don't need these people because AI can do so much for us.
+
+300
+00:43:09.080 --> 00:43:19.409
+Marcus M Darden: That is not going to change. That is going to continue to grow. But I don't feel like we are going to lose net jobs
+
+301
+00:43:19.840 --> 00:43:21.740
+Marcus M Darden: in CS.
+
+302
+00:43:22.560 --> 00:43:29.200
+Marcus M Darden: In software engineering, because… The jobs are going to change.
+
+303
+00:43:30.950 --> 00:43:45.469
+Marcus M Darden: When you are using a coding assistant, there's a number of them, Gemini, Claude Code, Codex, ADER, there's a bunch of them. They do some amazing stuff.
+
+304
+00:43:48.890 --> 00:44:06.900
+Marcus M Darden: The people who can use them well are going to be the people with jobs. And I promise you, you won't be able to use them well if you can't understand what they produce. Like, your job as an agentic engineer is going to be, have this thing.
+
+305
+00:44:07.180 --> 00:44:15.380
+Marcus M Darden: follow my directive, have it generate code, have it make updates, and then your job as an agentic engineer is going to be planning.
+
+306
+00:44:15.670 --> 00:44:20.040
+Marcus M Darden: It's going to be code review, it's going to be code curation, but…
+
+307
+00:44:20.920 --> 00:44:37.530
+Marcus M Darden: Planning code is really the planning parts. Planning code, code review and code curation, all of those things have code in them, and if you can't code, you can't do any of them. So, I really want you to do the absolute
+
+308
+00:44:37.780 --> 00:44:46.580
+Marcus M Darden: Best you can to struggle through everything that's difficult in this course, that's coding, and don't use those tools, because
+
+309
+00:44:47.350 --> 00:44:53.400
+Marcus M Darden: Humans learn by struggling. We don't learn much at all when things are easy.
+
+310
+00:44:53.690 --> 00:45:13.119
+Marcus M Darden: We just don't. I mean, what keeps us alive? You're walking through the jungle, and a tiger jumps out and eats you, right? You see a friend get eaten, and then you're like, okay, I don't want that to happen to me, and I've learned something. You have to lose something, and so that's a bit of an extreme example. I'll agree, but…
+
+311
+00:45:14.200 --> 00:45:25.200
+Marcus M Darden: Nothing comes easy. You say, hey, don't walk through there, you might get eaten by a tiger. Oh, yeah, sure, no problem. And then you do, and then you don't come back, and then your friend's like, oh, I guess I should listen.
+
+312
+00:45:25.420 --> 00:45:27.880
+Marcus M Darden: Right? So,
+
+313
+00:45:28.450 --> 00:45:37.270
+Marcus M Darden: don't let the tiger be you using AI. See how I brought that all the way back there? It's like, all the way back around. So,
+
+314
+00:45:37.960 --> 00:45:56.600
+Marcus M Darden: the AI is going to be very useful, and I would love to teach you more about it in another class, after this class, but you have to be able to code if you're going to be there. The people who can't code are the ones who are absolutely replaceable, 100%, by a terminal jockey with Claude in his hand.
+
+315
+00:45:57.200 --> 00:45:58.850
+Marcus M Darden: Or… their hand.
+
+316
+00:45:59.410 --> 00:46:05.859
+Marcus M Darden: Or per hand. Or they don't have hands that could be, alternative input devices.
+
+317
+00:46:07.600 --> 00:46:09.709
+Marcus M Darden: I just go off on tangents, so…
+
+318
+00:46:11.000 --> 00:46:17.259
+Marcus M Darden: You need a little bell out there to just ring and just get me back on focus, but,
+
+319
+00:46:19.020 --> 00:46:26.970
+Marcus M Darden: Bottom line is, minimal assistance only. You're gonna get AI just all in your face. You can't even…
+
+320
+00:46:27.330 --> 00:46:31.820
+Marcus M Darden: buy a toothbrush, I swear, these days that doesn't have AI in it.
+
+321
+00:46:32.330 --> 00:46:43.379
+Marcus M Darden: So, it's gonna be everywhere. If you put in anything in your web browser, well, how do I do X? You're gonna get an AI summary of it. So, try to keep the AI down as low as you can. I mean, part of…
+
+322
+00:46:45.780 --> 00:46:55.890
+Marcus M Darden: my programming learning experience was, I don't know how to do what I want to do, I don't know how to figure out what I want to do.
+
+323
+00:46:56.110 --> 00:47:10.600
+Marcus M Darden: How do I figure it out? I don't know. You know, in MIT, there was, like, there was a section next to the printers, it was about as big as this table, and the entire Unix manual was there in books, and if you wanted to know something.
+
+324
+00:47:11.020 --> 00:47:13.480
+Marcus M Darden: You just had to go find it in the book!
+
+325
+00:47:14.090 --> 00:47:27.350
+Marcus M Darden: Right? And that was when you're like, oh, I've been to that book so many times, I bet if I need something, it's gonna be in this book over here. And so, that's part of learning. Now we're gonna be robbed of that. You ask for help.
+
+326
+00:47:27.350 --> 00:47:28.410
+Marcus M Darden: in…
+
+327
+00:47:28.410 --> 00:47:48.589
+Marcus M Darden: Google, you used to at least have to pick a web page, then go to the web page, and then read the web page. Now it's just like, no, no, here's all that you needed to know out of that, with some examples and some citations, just in case you wanted to go look. So, AI is already robbing us of some of the difficulty that really generates
+
+328
+00:47:48.660 --> 00:47:59.289
+Marcus M Darden: strong learning experiences. So, just be really careful, try to keep your questions, even on Google, about how to do a thing to a minimum, right? Try to be like, well.
+
+329
+00:47:59.390 --> 00:48:02.390
+Marcus M Darden: I know it's in the Python language.
+
+330
+00:48:02.390 --> 00:48:27.300
+Marcus M Darden: So, let me just go to the Python homepage, and it's gonna be painful. You're gonna be tooling around in this kind of documentation, but learning the overall structure of the language, and the libraries, and things that make Python Python, that is what's going to turn you into a coder, not being able to say, oh, I got this really great summary off of Google, didn't see any code, but the summary was so clear, I was able to do it.
+
+331
+00:48:27.900 --> 00:48:36.980
+Marcus M Darden: you forget that you didn't come up with that summary. And later on, when you need to be able to use summarized information that you didn't summarize.
+
+332
+00:48:37.120 --> 00:48:41.039
+Marcus M Darden: You don't have it. You gotta go back and look at your code if you're lucky.
+
+333
+00:48:42.320 --> 00:48:57.200
+Marcus M Darden: So, try to use minimal assistance only. Stay on reference sites while you're coding. There's good reference sites for Python. Don't use any generated code or anything generated for code or submissions or…
+
+334
+00:48:57.880 --> 00:49:00.250
+Marcus M Darden: Question answers, all that stuff.
+
+335
+00:49:01.040 --> 00:49:03.870
+Marcus M Darden: We're gonna be using Python 3.13,
+
+336
+00:49:04.360 --> 00:49:11.639
+Marcus M Darden: 313, Jupyter notebooks for lecture notes, and some Jupyter notebooks in lab.
+
+337
+00:49:12.060 --> 00:49:30.510
+Marcus M Darden: Query Learn, which I talked about as the testing stuff over in this CBTF. Canvas, we'll do some assessments on there. And for the first half of the course, we're only going to use… well, I say only, but we've already installed one package. We're only going to use the standard library. So, when I installed
+
+338
+00:49:31.200 --> 00:49:45.099
+Marcus M Darden: Jupyter, that's from outside of the standard library, so I'm trying to keep that down to a minimum. We're gonna use Jupyter, and we're also gonna use PyTest, which is an external library to help us run tests on our code. But outside of that.
+
+339
+00:49:45.100 --> 00:50:02.579
+Marcus M Darden: We're just going to be using standard library stuff. In the second half, we'll get more into the data science-y side of it. We'll start using Pandas and NumPy, which are some more strong number-crunching libraries that are very popularly used, and definitely the kind of stuff that you would want to know coming out of this course.
+
+340
+00:50:02.580 --> 00:50:04.250
+Marcus M Darden: But we'll get to that in the second half.
+
+341
+00:50:07.880 --> 00:50:18.989
+Marcus M Darden: Where to get help? Obviously, me and Rafe. Come to office hours, hit up Ed, I'll do my best to be on Ed and EX291 Admin, which…
+
+342
+00:50:21.430 --> 00:50:26.340
+Marcus M Darden: Gotta figure out where that email goes. I tried it, and I sent something. It does?
+
+343
+00:50:26.470 --> 00:50:32.090
+Marcus M Darden: Oh, because I didn't get it. I don't know, I didn't get it. I'm like, I said, where does this email end up?
+
+344
+00:50:32.810 --> 00:50:35.270
+Marcus M Darden: Nothing. Okay, well, that's good.
+
+345
+00:50:35.630 --> 00:50:43.580
+Marcus M Darden: He's getting it. There we go. So, I gotta put myself on there so I can be of assistance. As well, we have,
+
+346
+00:50:44.190 --> 00:50:50.740
+Marcus M Darden: a university administrative support personnel as well. Her name is Rose. You probably won't have to deal with her too much.
+
+347
+00:50:50.940 --> 00:50:53.730
+Marcus M Darden: But Rose is helping us too, so…
+
+348
+00:50:54.320 --> 00:51:00.889
+Marcus M Darden: she'll help with anything there, I can see if I can put her on that email as well. If all the office hours conflict.
+
+349
+00:51:01.210 --> 00:51:07.670
+Marcus M Darden: you gotta maybe try to find a way to contact us. So, I've got office hours for 281,
+
+350
+00:51:07.790 --> 00:51:12.859
+Marcus M Darden: And… I'm just gonna do the 281, 291 office hours with…
+
+351
+00:51:13.030 --> 00:51:17.719
+Marcus M Darden: Them as well, just because there's only 11 of you and…
+
+352
+00:51:18.450 --> 00:51:28.270
+Marcus M Darden: I don't know, 700 of them. So I've got office hours on Mondays, Tuesdays, Thursdays and Fridays.
+
+353
+00:51:28.310 --> 00:51:47.260
+Marcus M Darden: And if it turns into a situation where, like I said, come to me, talk about some things. If, like, it's just always way too crowded in 281, 291 office hours, and you're like, well, we need Wednesdays, then I'll come in on Wednesdays and then give you something. But let's make sure that we have a time to get together. Rafe has got office hours.
+
+354
+00:51:47.260 --> 00:51:55.140
+Marcus M Darden: as well, and, we should be able to get you through that. So, let's make sure that these things work.
+
+355
+00:51:56.430 --> 00:51:58.530
+Marcus M Darden: Alright, are we halfway through?
+
+356
+00:51:58.800 --> 00:52:03.099
+Marcus M Darden: Not bad, not bad. It should be 340. It's 351.
+
+357
+00:52:03.400 --> 00:52:11.470
+Marcus M Darden: Only 11 minutes behind after the entire… slides, PDF, HTML fiasco, so…
+
+358
+00:52:11.970 --> 00:52:18.430
+Marcus M Darden: Alright, we got a couple of minutes here. I'm gonna go grab some water, and I will be right back. Feel free to stand, stretch.
+
+359
+00:52:18.590 --> 00:52:32.039
+Marcus M Darden: Going to the bathroom, find us back.
+
+360
+00:52:32.230 --> 00:52:38.430
+Marcus M Darden: But it makes sense to you when you don't even have a position in business.
+
+361
+00:52:38.900 --> 00:52:55.240
+Marcus M Darden: I have to figure out why Darden… he needs to, like, fix my hiring. Yeah, I don't… Yeah.
+
+362
+00:52:56.360 --> 00:52:59.630
+Marcus M Darden: How do you have linker errors? How do you do we? 42?
+
+363
+00:53:00.010 --> 00:53:18.840
+Marcus M Darden: Oh, okay. I could not remember what it was. Because we installed… Are you speaking with this project?
+
+364
+00:53:18.980 --> 00:53:22.239
+Marcus M Darden: Yeah, because it's zero plus plus 15.
+
+365
+00:53:24.120 --> 00:53:26.959
+Marcus M Darden: So, if you're like something, it dies.
+
+366
+00:53:30.140 --> 00:53:43.570
+Marcus M Darden: Why don't these link? It's these do. It does not link things.
+
+367
+00:53:46.460 --> 00:53:52.349
+Marcus M Darden: Okay, so it's not linking to something that's in the same file.
+
+368
+00:53:55.810 --> 00:53:58.579
+Marcus M Darden: It's 5 minutes in your screen.
+
+369
+00:53:59.330 --> 00:54:01.269
+Marcus M Darden: What's the idea for it.
+
+370
+00:54:01.630 --> 00:54:07.470
+Marcus M Darden: Oh, I didn't really do this. Obviously, we've been floating something, it's like, I think one and a half.
+
+371
+00:54:08.560 --> 00:54:16.240
+Marcus M Darden: we're saving… we're saving minutes everywhere. All right, so… Now we're into the… Python section.
+
+372
+00:54:16.700 --> 00:54:31.829
+Marcus M Darden: So, this is just some basic Python, some crash core stuff. If this stuff was all way too easy, we could be done out of here in 20 minutes, because after this is what I got for the day. So, we're just going to make sure that we understand some core syntax stuff.
+
+373
+00:54:31.910 --> 00:54:38.089
+Marcus M Darden: And make sure that you're going to be able to do some of the basic stuff that you need to do to write these projects.
+
+374
+00:54:39.110 --> 00:54:40.230
+Marcus M Darden: Alright.
+
+375
+00:54:42.730 --> 00:54:51.620
+Marcus M Darden: All right. Functions, conditionals, and loops, although I should have put that in conditionals, functions, conditionals, loops, and functions order.
+
+376
+00:54:53.950 --> 00:55:00.930
+Marcus M Darden: So, that you've all been here doing some Python. How many people have also done C++ or CQ?
+
+377
+00:55:01.580 --> 00:55:07.410
+Marcus M Darden: Anybody? I've only done C++, not Python. Okay, so you're… you're no Python, just all…
+
+378
+00:55:07.980 --> 00:55:24.209
+Marcus M Darden: That's what I'm saying, you haven't done no Python. No Python, just C++. Okay, great. Well, this slide is exactly for you. It's okay. That's what I said, we didn't know what people were gonna come in knowing. So, just reminders.
+
+379
+00:55:24.210 --> 00:55:28.350
+Marcus M Darden: for those of you that have been in Python, and for you who haven't.
+
+380
+00:55:28.350 --> 00:55:40.350
+Marcus M Darden: White space matters in Python, unlike in C++. So, we don't have curly braces, we have indent and outdent. You have to be regular with that, the Python standard.
+
+381
+00:55:40.350 --> 00:55:51.569
+Marcus M Darden: is two space… 4 spaces. You can use fewer if you want, but it has to be regular. So this is just a list of our real common ones. We've got our conditionals, which is if
+
+382
+00:55:51.830 --> 00:56:05.490
+Marcus M Darden: And we don't have to put parentheses around it, we just have any expression that evaluates to a particular value. If it's true-ish, then we do the stuff inside the block. If it's zero or false-ish, then we don't.
+
+383
+00:56:05.910 --> 00:56:10.950
+Marcus M Darden: And it's gonna look like if some expression, and then a colon.
+
+384
+00:56:10.950 --> 00:56:28.970
+Marcus M Darden: Then it says, use a colon and indent to begin a block. So we put a colon on the previous line, we come down line and indent, and everything there is inside the block as long as we stay at that indent level. Even if we have blank lines in the indent level, it's still not a problem, but as soon as we outdent, then that's the end of the block.
+
+385
+00:56:29.200 --> 00:56:38.890
+Marcus M Darden: So, while loops work similar to if statements. It's just going to repeat everything inside the block until failure, whereas the if statement just goes through the block once.
+
+386
+00:56:39.260 --> 00:56:54.290
+Marcus M Darden: For loops. We know what a for loop is if you know a language. There's a couple of different ways that, you can use for loops in C++ now. There was originally just the one way, which was a count-controlled for loop, so we always used
+
+387
+00:56:54.690 --> 00:57:06.120
+Marcus M Darden: for loops to be count controlled, when we knew how many things there were, and then we used while loops to be event controlled, and we didn't know how many times we were gonna do it. We're just gonna do this until something happens.
+
+388
+00:57:06.270 --> 00:57:10.780
+Marcus M Darden: So that's what while loops are for. They're for things that aren't counted.
+
+389
+00:57:10.990 --> 00:57:19.189
+Marcus M Darden: So, the form item in a list, that is a form of…
+
+390
+00:57:19.470 --> 00:57:38.579
+Marcus M Darden: account control loop, because you're going to do it once for the number of things in the loop, but the version of it doesn't require you to actually even know what that number is, it just promises to process all of them. So, those are now included in C++, known as a range-based for loop. It's just a very similar syntax.
+
+391
+00:57:39.450 --> 00:57:52.500
+Marcus M Darden: Here is what would look like a count-controlled loop in Python. So, I in range 10, this is a generator that is going to give me the values 0 through 9.
+
+392
+00:57:52.540 --> 00:58:08.880
+Marcus M Darden: And so, this would actually do this just like a 4I equals 0, i less than 10, plus plus i. This one works just like that. So, then I can use the i inside there, and it has on those individual values. So, that's… it's just a less… because of the way Python works.
+
+393
+00:58:09.190 --> 00:58:17.340
+Marcus M Darden: it's less… the least used loop that we have, actually. It's, like, the primary loop in C++ is count-controlled I loops, but…
+
+394
+00:58:17.610 --> 00:58:22.030
+Marcus M Darden: You're more likely to use a range base for loop.
+
+395
+00:58:22.870 --> 00:58:34.399
+Marcus M Darden: in Python, or a comprehension, which is sort of unique to Python, at least from a C++ standpoint. So comprehensions process a whole list, or a whole iterable container.
+
+396
+00:58:34.510 --> 00:58:52.399
+Marcus M Darden: We'll do some checking on that. And then, the same thing for function here. I'm gonna say this def keyword is how I create a function. In C or C++, I gotta start with the return type, and then the function name, since we don't really worry about return types.
+
+397
+00:58:52.610 --> 00:59:09.769
+Marcus M Darden: at the execution level, we can just say, define this function. So def is short for define, define, function name, the whatever parameters we have, same sort of thing, colon, and then we come down and indent, and everything that's indented at that level is inside of that function.
+
+398
+00:59:10.110 --> 00:59:16.120
+Marcus M Darden: Right? Once I'm done, just like here on the slide, I out-dent To end the block.
+
+399
+00:59:16.310 --> 00:59:24.069
+Marcus M Darden: blocks have scope, just like C++, so you can declare something within a block that's only available within the block.
+
+400
+00:59:25.210 --> 00:59:35.989
+Marcus M Darden: It's like a 4I equals 0 loop in C++, that I is only active inside of that context, and then once you leave the 4 context, the i is gone. Same thing with blocks.
+
+401
+00:59:38.030 --> 00:59:42.729
+Marcus M Darden: Conditionals, of course, have else. If else.
+
+402
+00:59:43.450 --> 00:59:46.200
+Marcus M Darden: But so do our loops.
+
+403
+00:59:47.610 --> 00:59:58.199
+Marcus M Darden: Which is a little bit different thing. So, you can tack on an else outside of a loop, and the else is what happens when the loop condition fails.
+
+404
+00:59:58.400 --> 01:00:07.739
+Marcus M Darden: So you can think of this as, like, the else is going to happen. So I can say, while I'm processing these 10 things, do this. And then the else…
+
+405
+01:00:07.740 --> 01:00:19.270
+Marcus M Darden: that's tacked onto the while loop happens when I'm done while looping. So, if you want to do some sort of cleanup things, maybe you set something up, and then while I've got to process it.
+
+406
+01:00:20.140 --> 01:00:34.900
+Marcus M Darden: else, now clean it up, and I'm out. So, it works just like an if-else, but the loop part always happens as many loop times as it would, so you can think of that as really just the same structure as if-else, but with repetition.
+
+407
+01:00:35.040 --> 01:00:37.179
+Marcus M Darden: In the wild, or in the fork.
+
+408
+01:00:40.100 --> 01:00:54.449
+Marcus M Darden: So conditional and loops can use else, and because they don't use that crazy two-word syntax like C++, else if is now just one keyword, and it's this thing here. ELIF.
+
+409
+01:00:54.490 --> 01:01:07.320
+Marcus M Darden: So, it's a single keyword, so if you want to have multiple conditionals, you can say, if A is less than 100, L if A is less than 50, L if A is less than 25, else.
+
+410
+01:01:08.220 --> 01:01:20.000
+Marcus M Darden: And so, it's just like if, else, else, else, else. It's just like it's if, else, if, else, if, else, if, else. It's just if, elf, elif, eleph, else.
+
+411
+01:01:20.850 --> 01:01:27.630
+Marcus M Darden: So, that's your major… syntactical…
+
+412
+01:01:28.530 --> 01:01:35.770
+Marcus M Darden: update on Python or C++. There's a Learn Python LearnPython.com.
+
+413
+01:01:36.200 --> 01:01:37.880
+Marcus M Darden: learnpython.org.
+
+414
+01:01:38.730 --> 01:01:44.840
+Marcus M Darden: really… really friendly site that I… that I've seen in the past.
+
+415
+01:01:45.350 --> 01:01:49.959
+Marcus M Darden: Tom? Dot org.org, okay. LearnBython.org, great place to look.
+
+416
+01:01:50.350 --> 01:01:55.199
+Marcus M Darden: Alright, so, I've got this, nifty little…
+
+417
+01:01:55.330 --> 01:02:04.020
+Marcus M Darden: down arrow. See this? It even jumps every once in a while, let me know that it's there. So, what this does is I can go to…
+
+418
+01:02:04.510 --> 01:02:16.859
+Marcus M Darden: another cell on this slide. It just looks like the next cell for those of you that are looking at the notebook. But for me, it's an off-ramp. If you ever see me up here, and I go through one of those without going down.
+
+419
+01:02:17.990 --> 01:02:27.340
+Marcus M Darden: let me know, because I'm… I gotta get used to seeing that. So, here we see some code. This is some function, and it's always good to read code. Reading code is…
+
+420
+01:02:27.490 --> 01:02:37.290
+Marcus M Darden: the best practice for writing code. My son is 8 years old, and trying to get him to do more writing, and he's just writing, and, you know, his spelling is atrocious.
+
+421
+01:02:37.520 --> 01:02:54.039
+Marcus M Darden: his age, right? But I'm like, I told him, don't worry about spelling, because you're not going to learn how to spell by writing, right? If you can't do it, you can't do it. Doing more of it is not going to make you better in that particular case. Now, can't make baskets. Shooting more baskets will get you better, but…
+
+422
+01:02:54.040 --> 01:03:04.149
+Marcus M Darden: If you don't know how to spell it, writing it multiple times is not going to make your spelling right. But reading will, so I said, okay, just keep writing, and when you read more, you'll get better, so…
+
+423
+01:03:04.260 --> 01:03:08.709
+Marcus M Darden: You're gonna have to read some code, you should find as much code as you can.
+
+424
+01:03:08.960 --> 01:03:21.330
+Marcus M Darden: That's not somebody else's solution, mind you. So, but there's plenty of stuff out on… out online, like, if you go to tutorial sites, you know, if you want to find some,
+
+425
+01:03:21.670 --> 01:03:38.150
+Marcus M Darden: Find some repo that does something interesting on GitHub. Something that interests you, that you might be interested in on your computer, or in your home, or in your hobbies. There's somebody that's doing something. Go find somebody who's got a repo dedicated to that in Python, and then just…
+
+426
+01:03:38.150 --> 01:03:51.730
+Marcus M Darden: Start trying to wade your way through their codebase and say, well, what are they doing? How are they using functions? How are they using decorators? We'll talk about that later. How are they using modules? Like, all kind of stuff. So, a lot of my…
+
+427
+01:03:52.670 --> 01:03:58.520
+Marcus M Darden: Analogies are gonna come from sports, And… Music.
+
+428
+01:03:59.400 --> 01:04:01.420
+Marcus M Darden: Athlete and a musician.
+
+429
+01:04:01.900 --> 01:04:02.980
+Marcus M Darden: But…
+
+430
+01:04:04.160 --> 01:04:20.469
+Marcus M Darden: Anybody who does their craft and does their craft well has a couple of different modalities. Musicians, they practice a lot. You're not going to be a good musician unless you practice a lot. But then, when they're not practicing, most musicians are spending a lot of time listening to music.
+
+431
+01:04:21.320 --> 01:04:30.370
+Marcus M Darden: Basketball players are on the court, they're, you know, in the weight room, but then when they're not, they're spending a lot of time watching game film.
+
+432
+01:04:30.610 --> 01:04:42.660
+Marcus M Darden: They're watching other people play basketball. So, the same thing is true. If you're trying to learn how to code, you're going to be writing a lot of code, but you're not going to get very… you're not going to get better very fast.
+
+433
+01:04:42.660 --> 01:04:59.139
+Marcus M Darden: Until you see more code. So, having a chance to go read more code is also one of the greatest things, especially when you see something that you have no idea what that means. Like, I don't even know what was done there. Now, that's, you know, especially if it's somebody else's code that's not related to your project.
+
+434
+01:04:59.190 --> 01:05:17.970
+Marcus M Darden: That's a perfectly good reason to use some AI, but like, dump this into a browser and be like, what is happening here? And then say, oh, it's this function that calls blah blah blah blah, this is known as list print creation, or whatever it's gonna say. Then you can go say, okay, well, now let me go see on the Python site what I should be focusing on to figure out what's going on there, so…
+
+435
+01:05:17.990 --> 01:05:27.659
+Marcus M Darden: This is a perfectly good Python function there. We see it's, starts with a defined keyword. Our keywords all show up nice and green there in this highlighting.
+
+436
+01:05:27.780 --> 01:05:38.289
+Marcus M Darden: I think there's only 37 keywords in Python, so it's a pretty short language in terms of learning. Once you learn the 37 keywords, man, I would say you could probably get by with
+
+437
+01:05:39.660 --> 01:05:41.430
+Marcus M Darden: Probably less than half of those.
+
+438
+01:05:41.680 --> 01:05:45.430
+Marcus M Darden: I don't know if I use more than half of them on a regular basis, but…
+
+439
+01:05:45.930 --> 01:05:53.260
+Marcus M Darden: Define. Now I got a function. This function is named clip points. It takes two arguments, points and cap.
+
+440
+01:05:55.070 --> 01:06:01.759
+Marcus M Darden: We're gonna try to clip some points above some cap, and then the colon says, let's get this function going.
+
+441
+01:06:01.760 --> 01:06:15.480
+Marcus M Darden: come down and start indenting, we're indented four spaces, and I've got a variable assignment there in line 2, total equals 0, and then I've got a for loop, and we see this is a range-based for loop, it's going to go over all of the things
+
+442
+01:06:15.480 --> 01:06:18.219
+Marcus M Darden: in that container for PN points.
+
+443
+01:06:20.470 --> 01:06:31.240
+Marcus M Darden: If P is greater than cap, we've got the colon, we come in a block and do the if stuff, total plus equals cap. Otherwise, if it's not, then I'm gonna say total plus equals P.
+
+444
+01:06:33.990 --> 01:06:38.280
+Marcus M Darden: So all we're going to do is sum these… things pop.
+
+445
+01:06:38.670 --> 01:06:47.499
+Marcus M Darden: We're clipping them at that maximum. So, I would add 24, and I would add 12, but since 35 is over 30, I'm only going to add 30.
+
+446
+01:06:48.130 --> 01:06:58.170
+Marcus M Darden: And that's what this function does. You can give it a list of however many things you want it to have, or some generator that creates them, and then some cap that says anything above this
+
+447
+01:06:58.610 --> 01:06:59.999
+Marcus M Darden: Just use that.
+
+448
+01:07:01.530 --> 01:07:04.510
+Marcus M Darden: So, in this one, we see a function defined.
+
+449
+01:07:04.750 --> 01:07:14.239
+Marcus M Darden: and then we see that function call right here. We just called print with a call to clip points, so then it's gonna print that number for us.
+
+450
+01:07:14.370 --> 01:07:18.399
+Marcus M Darden: And… I can run this, right?
+
+451
+01:07:18.720 --> 01:07:22.920
+Marcus M Darden: How do I run it? Do I hit the… Yes!
+
+452
+01:07:23.170 --> 01:07:24.319
+Marcus M Darden: Nailed it!
+
+453
+01:07:24.550 --> 01:07:25.720
+Marcus M Darden: First drawing.
+
+454
+01:07:26.210 --> 01:07:27.230
+Marcus M Darden: Goodness.
+
+455
+01:07:27.430 --> 01:07:29.410
+Marcus M Darden: All right.
+
+456
+01:07:29.840 --> 01:07:35.389
+Marcus M Darden: So, those of you that have this up and running in notebook mode, all I did is I hit, like, Command-Enter.
+
+457
+01:07:35.560 --> 01:07:48.459
+Marcus M Darden: And it executed everything in this context. And you see there, now that little slur brackets thing says it's got a 1 in there, because we've executed this code. So, there we go. It rang.
+
+458
+01:07:49.100 --> 01:08:00.079
+Marcus M Darden: We call the print function. The print function had as its argument the return value of a call to clip points with those three values and the cat, and… there we go.
+
+459
+01:08:02.380 --> 01:08:03.370
+Marcus M Darden: Good.
+
+460
+01:08:03.850 --> 01:08:05.780
+Marcus M Darden: What questions do we have about this?
+
+461
+01:08:06.740 --> 01:08:17.569
+Marcus M Darden: It's a pretty straightforward one, right? We do have a for loop in there, but, you know, we've got… we've got 3 of our… the first three things that we looked at, right? So, we've got a conditional.
+
+462
+01:08:18.210 --> 01:08:22.390
+Marcus M Darden: With a… with a default, if and else. We've got a…
+
+463
+01:08:24.090 --> 01:08:30.229
+Marcus M Darden: And we've got a function. So, all of our three major control structures are taken care of here.
+
+464
+01:08:38.520 --> 01:08:58.409
+Marcus M Darden: There we go. Exercise 1. This is where you're going to write a function in your notebook. You will have a cell that's right after this one. You can see it, I can't. But what I want you to do is write some function above threshold, and just like the previous one takes a collection of values.
+
+465
+01:09:01.149 --> 01:09:02.379
+Marcus M Darden: And then…
+
+466
+01:09:03.990 --> 01:09:10.529
+Marcus M Darden: That T, which is my threshold value. So, returns a list of the values that are greater than T.
+
+467
+01:09:11.630 --> 01:09:15.919
+Marcus M Darden: We haven't really talked about this, you can make an empty loop. An empty…
+
+468
+01:09:16.109 --> 01:09:18.290
+Marcus M Darden: You can make an empty list.
+
+469
+01:09:18.510 --> 01:09:23.619
+Marcus M Darden: Just by setting a variable equal to There are four records.
+
+470
+01:09:25.090 --> 01:09:32.080
+Marcus M Darden: Then, you can append stuff, To that list with… Bush.
+
+471
+01:09:32.660 --> 01:09:33.819
+Marcus M Darden: Alright.
+
+472
+01:09:34.510 --> 01:09:39.899
+Marcus M Darden: A pen. It's a pen. So, so it was a,
+
+473
+01:09:40.660 --> 01:09:43.589
+Marcus M Darden: And I think I can go down here, so I'll go down…
+
+474
+01:09:43.720 --> 01:09:52.100
+Marcus M Darden: And there we go. So, there's what your task is. Jump in this thing, and take a couple of minutes, and see if you can't write
+
+475
+01:09:52.310 --> 01:09:53.399
+Marcus M Darden: this function.
+
+476
+01:09:53.540 --> 01:09:58.079
+Marcus M Darden: Alright, then I'll come back and write it, and we'll see how we all did begin.
+
+477
+01:10:16.260 --> 01:10:18.110
+Marcus M Darden: iPhone doesn't actually have scope.
+
+478
+01:10:19.250 --> 01:10:23.160
+Marcus M Darden: You can do vigorous things.
+
+479
+01:10:23.640 --> 01:10:27.490
+Marcus M Darden: You can define stuff in Bright, and then you should use it after.
+
+480
+01:10:28.550 --> 01:10:33.610
+Marcus M Darden: Python doesn't care. Because it exists, so it doesn't… Yeah.
+
+481
+01:10:33.740 --> 01:10:37.630
+Marcus M Darden: Yeah, alright, that makes sense. I guess I had my mic off, didn't I?
+
+482
+01:10:37.990 --> 01:10:40.959
+Marcus M Darden: I never turned it back on after I came back from the water.
+
+483
+01:10:42.430 --> 01:10:44.680
+Marcus M Darden: Hopefully that won't mess up the video too much.
+
+484
+01:10:57.760 --> 01:10:58.480
+Marcus M Darden: Is it…
+
+485
+01:11:35.210 --> 01:11:49.890
+Marcus M Darden: Down to 10 minutes, so… I gotta speed up just a little. Alright, I'm gonna get started on it. So, when I'm in here, I'm gonna do what we did on the previous side. We saw the function was defined as, and we're supposed to define something that tells me exactly what it should look like.
+
+486
+01:11:51.010 --> 01:11:54.250
+Marcus M Darden: Values… T.
+
+487
+01:11:54.560 --> 01:12:00.240
+Marcus M Darden: Perfect. And Python automatically indents for me, and if I want to.
+
+488
+01:12:03.530 --> 01:12:12.010
+Marcus M Darden: I can just say pass. If I hit pass in there, you'll see that my function actually runs pass as, like, a no-op, so…
+
+489
+01:12:12.220 --> 01:12:22.670
+Marcus M Darden: it at least allowed me to indent and have something, because you can't just have the colon and nothing. So, here I've basically stubbed the function out, the function does nothing.
+
+490
+01:12:22.920 --> 01:12:28.029
+Marcus M Darden: So, I think when I run this, let me uncomment this.
+
+491
+01:12:28.170 --> 01:12:30.330
+Marcus M Darden: Those hashes are comments, by the way.
+
+492
+01:12:31.400 --> 01:12:32.439
+Marcus M Darden: There we go.
+
+493
+01:12:32.960 --> 01:12:34.760
+Marcus M Darden: So, the pass…
+
+494
+01:12:34.940 --> 01:12:42.769
+Marcus M Darden: just didn't do anything. So the function got called, and when nothing happens in Python, none is what gets returned.
+
+495
+01:12:42.900 --> 01:12:57.720
+Marcus M Darden: So, the print statement says, do whatever above threshold gives us, and above threshold gave us none, because I didn't do anything, I just did a pass. So, now I've got something that works, and this is a very important technique as you're trying to build something. Get through the function.
+
+496
+01:12:57.720 --> 01:13:10.449
+Marcus M Darden: Even if the function doesn't do everything that you want it to do, make sure that the thing runs, and then you go back and you stretch it out a little bit, do a little bit more, do a little bit more, and then you get something out of it. So,
+
+497
+01:13:10.700 --> 01:13:17.289
+Marcus M Darden: Another thing I could do is I could just say, well, you wanted me to return some values, what if I just return all the values?
+
+498
+01:13:18.200 --> 01:13:19.580
+Marcus M Darden: it's not right
+
+499
+01:13:19.950 --> 01:13:33.010
+Marcus M Darden: But, once again, it's code that's working. So, these are techniques that you use as you build your way up to writing more complicated things that actually work. You know, I'm gonna have to do something like that. So, I'm gonna say…
+
+500
+01:13:33.210 --> 01:13:36.450
+Marcus M Darden: Let's give myself a return value.
+
+501
+01:13:36.720 --> 01:13:38.550
+Marcus M Darden: I'm just gonna call it answer.
+
+502
+01:13:39.750 --> 01:13:47.780
+Marcus M Darden: I'm gonna set that equal to an empty list. So now, I can come in there and say, instead of using values, what if I just return the answer?
+
+503
+01:13:48.650 --> 01:13:49.540
+Marcus M Darden: Perfect.
+
+504
+01:13:49.950 --> 01:13:51.120
+Marcus M Darden: It's working?
+
+505
+01:13:51.280 --> 01:13:54.569
+Marcus M Darden: It's not doing what I want, but it ain't broke.
+
+506
+01:13:55.190 --> 01:14:04.400
+Marcus M Darden: Well, it's not doing what I want, but it runs. Let's go there, okay. So, we do the same thing in this one, we're gonna have to look at each one of them, so I'm gonna go ahead and write this.
+
+507
+01:14:06.030 --> 01:14:08.809
+Marcus M Darden: In a really readable way for the humans.
+
+508
+01:14:09.100 --> 01:14:15.060
+Marcus M Darden: For value in values, like to have these nice plural names on collections.
+
+509
+01:14:15.500 --> 01:14:25.559
+Marcus M Darden: go for a singular name when I'm looking at one of them. For value in values, and we say, if value is greater than
+
+510
+01:14:25.680 --> 01:14:33.650
+Marcus M Darden: threshold, Then, answer, append… Value.
+
+511
+01:14:36.590 --> 01:14:37.660
+Marcus M Darden: Alright.
+
+512
+01:14:41.030 --> 01:14:41.980
+Marcus M Darden: And it works.
+
+513
+01:14:42.970 --> 01:14:46.209
+Marcus M Darden: This one, I didn't need an else, because if…
+
+514
+01:14:47.580 --> 01:14:50.690
+Marcus M Darden: It's not greater than the threshold, I just leave it alone.
+
+515
+01:14:51.010 --> 01:14:55.870
+Marcus M Darden: So, this one's a little simpler than the previous function, but hopefully you get something like this.
+
+516
+01:14:56.100 --> 01:14:57.160
+Marcus M Darden: Alright.
+
+517
+01:14:58.150 --> 01:15:00.540
+Marcus M Darden: Excellent. Any questions on this one?
+
+518
+01:15:03.960 --> 01:15:06.739
+Marcus M Darden: Alright, imports and modules.
+
+519
+01:15:06.840 --> 01:15:08.949
+Marcus M Darden: Python uses modules.
+
+520
+01:15:09.640 --> 01:15:18.820
+Marcus M Darden: And it's one of the greatest things about Python. So here, we're going to import statistics, and…
+
+521
+01:15:19.690 --> 01:15:26.090
+Marcus M Darden: Compute the median, And the standard deviation for a list.
+
+522
+01:15:29.640 --> 01:15:45.010
+Marcus M Darden: there's multiple syntaxes for import. You can just say import math, and it'll take an entire module, and everything that's in the module gets imported, right? But it lives inside of the name of the thing that you imported. So if I say import math.
+
+523
+01:15:45.010 --> 01:15:53.060
+Marcus M Darden: I'm gonna have to use the dots to get stuff out of it. So I say math.squareroot is where this new function that I imported from math lives.
+
+524
+01:15:53.630 --> 01:16:01.890
+Marcus M Darden: There's another way that I can use imports, you can see there, and the second one is, like, import really long module name as RLMN.
+
+525
+01:16:01.970 --> 01:16:15.039
+Marcus M Darden: So you can rename these things as you like. Some people do that, we'll see that. It's pretty common when we use some stuff later, like NumPy and Pandas. People always just use the same two-letter abbreviation
+
+526
+01:16:15.040 --> 01:16:26.530
+Marcus M Darden: import pandas as PD, right? Import NumPy as NP. So that's really… you're not… you're never really looking at a modulane that's that long, but some people like to make things a little bit…
+
+527
+01:16:26.530 --> 01:16:33.870
+Marcus M Darden: cleaner. So, that's something there, that's called module aliasing. It's pretty… you use some common shorthands on there. From math.
+
+528
+01:16:33.870 --> 01:16:44.189
+Marcus M Darden: Now, if I don't want to import everything in math, but I just want to get some subset of it, I can tell it exactly what to import. So I've said, from math, import only pi and square root.
+
+529
+01:16:44.290 --> 01:16:56.230
+Marcus M Darden: So pi isn't a function, pi is a constant. Square root is a function, whereas before, when I said import math, I had to say math.square root. Since I've named it in the import, now I can say, well, I can just use square root.
+
+530
+01:16:56.450 --> 01:16:58.719
+Marcus M Darden: Because I already named it.
+
+531
+01:16:59.180 --> 01:17:07.150
+Marcus M Darden: Right? And then, just as before, you can alias objects, so I can say, from math, import square root as…
+
+532
+01:17:08.000 --> 01:17:16.270
+Marcus M Darden: whatever I want to name things. So, in general, it's not a good idea to do a whole bunch of as-ing.
+
+533
+01:17:16.530 --> 01:17:19.210
+Marcus M Darden: Just because it makes people nuts.
+
+534
+01:17:19.210 --> 01:17:40.389
+Marcus M Darden: But if you're… if you're in a particular scope, and people are always using the same thing, like when we look at NumPy and Pandas, people always abbreviate those things. So, if somebody that's never seen your code looks at your code, like, oh, NP, they must be using NumPy, that's understandable, but, like, if you just decide to call square root, you know, square underscore root, people are gonna be like.
+
+535
+01:17:40.810 --> 01:17:53.869
+Marcus M Darden: what function is this? Where did they get that function? And you never want people looking at your code and scratching their head, and scrolling back up to see what the hell did they do? Why did they do this? And you get people doing this to your…
+
+536
+01:17:53.970 --> 01:17:58.569
+Marcus M Darden: you're back. But, it can be done.
+
+537
+01:17:59.030 --> 01:18:14.020
+Marcus M Darden: And then this last one says, from math, import asterisk, which is basically import everything. So it takes all of the objects and dumps them into your namespace. So now, you can't write a variable named pi, which you might have wanted to do.
+
+538
+01:18:14.110 --> 01:18:29.570
+Marcus M Darden: Or if you do, you're overwriting something, and there could be a function there, you might not be using the function you think you're using if you say, import everything from this library and import everything from that library. If those two libraries have a function called square root, whoever gets their last wins.
+
+539
+01:18:29.580 --> 01:18:35.349
+Marcus M Darden: And hopefully they're doing the same thing, hopefully square root is square root, but if the functions are less,
+
+540
+01:18:35.500 --> 01:18:44.870
+Marcus M Darden: the functions are less, specific, then you might get different things. One calculates area in square meters, one calculates area in square feet, and then your
+
+541
+01:18:45.900 --> 01:18:54.109
+Marcus M Darden: rocket crash lands on Mars, and you think, oh, I meant meters. You were thinking feet? Oh, my bad.
+
+542
+01:18:56.860 --> 01:19:00.120
+Marcus M Darden: Alright, so, import statistics.
+
+543
+01:19:00.260 --> 01:19:03.600
+Marcus M Darden: and compute… the median.
+
+544
+01:19:04.600 --> 01:19:10.000
+Marcus M Darden: So now we might have to do a little bit of work there. How do I… Git?
+
+545
+01:19:11.640 --> 01:19:12.970
+Marcus M Darden: Medium.
+
+546
+01:19:15.900 --> 01:19:21.240
+Marcus M Darden: I'm just going for it, right? So, import… Statistics.
+
+547
+01:19:23.690 --> 01:19:31.720
+Marcus M Darden: If I can do it that way, and then I will have something like… Statistics… dot median.
+
+548
+01:19:33.230 --> 01:19:39.919
+Marcus M Darden: If I run that, it's like, yes, there's a function called statistics.median. It looks like you give it data.
+
+549
+01:19:40.050 --> 01:19:41.030
+Marcus M Darden: Sweet.
+
+550
+01:19:41.800 --> 01:19:50.900
+Marcus M Darden: Okay, so I'm gonna go up here and uncomment values, so now I have them. I'm gonna call median on Values.
+
+551
+01:19:52.690 --> 01:19:54.020
+Marcus M Darden: And run it.
+
+552
+01:19:54.470 --> 01:19:55.420
+Marcus M Darden: There we go.
+
+553
+01:19:55.520 --> 01:19:58.819
+Marcus M Darden: So the median on those things is a 9, which is correct.
+
+554
+01:19:59.790 --> 01:20:02.429
+Marcus M Darden: What about this other thing that it asks me to do?
+
+555
+01:20:04.400 --> 01:20:08.160
+Marcus M Darden: They said we wanted this in a print statement.
+
+556
+01:20:08.410 --> 01:20:17.389
+Marcus M Darden: So that's there. What about… Statistics… PST Dev.
+
+557
+01:20:22.160 --> 01:20:25.430
+Marcus M Darden: So yeah, it says that is a function, this object.
+
+558
+01:20:25.490 --> 01:20:36.449
+Marcus M Darden: So I printed the 9 from this line, and then when this statement here gets executed, it's just like, what is that? Evaluate this. It says, well, this evaluates to an object, and then…
+
+559
+01:20:36.470 --> 01:20:55.309
+Marcus M Darden: Since that was the last thing it got out of there, it showed up for me, though. So there is some function there that I can give some data, so I'm going to try the same thing by slapping values in there, and I don't have a mu that I want to use, but there we go. And so they wanted us to do some printing on that, so I'm going to go back here, and then…
+
+560
+01:20:55.540 --> 01:20:57.200
+Marcus M Darden: Wrap that in…
+
+561
+01:20:57.300 --> 01:21:04.709
+Marcus M Darden: print statement, and we see that. So, a slight difference, did you see that really quickly when I hit that enter, that execution?
+
+562
+01:21:05.000 --> 01:21:08.369
+Marcus M Darden: I'm gonna paste it back in there, and take the print off.
+
+563
+01:21:11.390 --> 01:21:13.150
+Marcus M Darden: Oh, I guess I gotta do it last.
+
+564
+01:21:15.020 --> 01:21:15.600
+Marcus M Darden: No!
+
+565
+01:21:25.170 --> 01:21:27.740
+Marcus M Darden: So these two things are displayed.
+
+566
+01:21:29.720 --> 01:21:31.399
+Marcus M Darden: This is returned.
+
+567
+01:21:32.150 --> 01:21:34.420
+Marcus M Darden: You see, it says.
+
+568
+01:21:36.260 --> 01:21:42.169
+Marcus M Darden: as my input on number 14, the output was this, because it was the last thing that I said.
+
+569
+01:21:42.540 --> 01:21:47.020
+Marcus M Darden: So the script executes, and then the last thing that's in the script is what the script returns.
+
+570
+01:21:49.380 --> 01:21:50.709
+Marcus M Darden: I think they got clasped.
+
+571
+01:21:55.940 --> 01:22:02.300
+Marcus M Darden: It goes into classes here. Check that out. I'll pop in and hit this stuff at the beginning of…
+
+572
+01:22:02.410 --> 01:22:04.509
+Marcus M Darden: lecture on Tuesday.
+
+573
+01:22:08.560 --> 01:22:10.939
+Marcus M Darden: Alright, so there we are.
+
+574
+01:22:11.080 --> 01:22:15.889
+Marcus M Darden: Save your notebook with the stuff that you did get done. Try pushing that before we go.
+
+575
+01:22:16.190 --> 01:22:26.350
+Marcus M Darden: And then also, when you get a chance later tonight, try to walk through the rest of the exercises and see if you're good with it, alright? We'll be in contact, and…
+
+576
+01:22:26.680 --> 01:22:45.440
+Marcus M Darden: I think that's what we have. Tomorrow, there is lab. It's optional, though if you want to come in and make sure that all of your setups are working, you've got virtual environments working, you want to make sure that you've got VS Code configured the way that we're going to be using it in class.
+
+577
+01:22:45.540 --> 01:22:50.099
+Marcus M Darden: Rafe will be there, I might be able to get over there, I've got office hours at that time, too, so…
+
+578
+01:22:50.370 --> 01:23:04.559
+Marcus M Darden: But it's right downstairs, so we'll see. So, tomorrow, if you want to show up in 1303 Eaks, Rafe will be there for sure, and probably, maybe another half of those guys as well. It's just always frowns.
+
+579
+01:23:04.890 --> 01:23:11.700
+Marcus M Darden: So, that's it. All right, have a good one, and come talk to me about anything that you need to let me know. Thanks.
+
+580
+01:23:20.310 --> 01:23:23.879
+Marcus M Darden: 496 a week.
+
+581
+01:23:24.500 --> 01:23:28.760
+Marcus M Darden: Those are being offered in the community.
+

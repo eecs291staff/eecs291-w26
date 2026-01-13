@@ -1,0 +1,7 @@
+track_id,track_name,artist_id,genre,duration_ms
+T1 ,Run ,A1, Pop ,210000
+t2,Glow,A2,Indie,185000
+t3,Midnight Drive,a1,Pop,232000
+T4,Sandstorm,A3,EDM,198000
+t5 ,Northbound,A4,,205000
+t6,Signal,A2,Indie,176000

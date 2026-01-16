@@ -1,0 +1,5 @@
+[
+  {"team_id": "SEA", "team_name": "Seattle Storm", "abbr": "SEA"},
+  {"team_id": "PHX", "team_name": "Phoenix Mercury", "abbr": "PHX"},
+  {"team_id": "NY", "team_name": "New York Liberty", "abbr": "NY"}
+]

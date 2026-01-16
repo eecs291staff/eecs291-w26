@@ -1,0 +1,11 @@
+game_id,player_id,team_id,points,rebounds,assists
+g1,p1,SEA,12,5,7
+g1,p2,SEA,8,3,2
+g1,p3,PHX,15,4,3
+g1,p4,PHX,,,
+g2,p1,SEA,20,6,5
+g2,p3,PHX,10,7,1
+g2,p5,NY,5,2,4
+g2,p2,SEA,0,1,1
+g3,p5,NY,12,8,2
+g3,p4,PHX,9,3,2

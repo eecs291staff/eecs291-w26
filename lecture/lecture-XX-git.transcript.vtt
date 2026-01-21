@@ -1,0 +1,2186 @@
+WEBVTT
+
+1
+00:00:31.490 --> 00:00:36.809
+Marcus M Darden: All right. Well… Here we are again.
+
+2
+00:00:43.810 --> 00:00:47.979
+Marcus M Darden: Seems to be just about everything I need for class here.
+
+3
+00:00:50.590 --> 00:00:57.790
+Marcus M Darden: re… Did this, scheduling here, so we've got…
+
+4
+00:00:58.710 --> 00:01:01.000
+Marcus M Darden: We're gonna get back to the Lecture 1 stuff.
+
+5
+00:01:01.130 --> 00:01:07.400
+Marcus M Darden: That we didn't get to yesterday, after we do some Git stuff. So, that should bring us…
+
+6
+00:01:07.780 --> 00:01:16.030
+Marcus M Darden: Hopefully, to a place where we can at least have some decent conversations, or, you know, leave you at a position where you can do some…
+
+7
+00:01:17.900 --> 00:01:22.699
+Marcus M Darden: Decent searching on your own to figure out what you need to know.
+
+8
+00:01:23.350 --> 00:01:27.409
+Marcus M Darden: Alright, so what I need first off is…
+
+9
+00:01:47.450 --> 00:01:52.349
+Marcus M Darden: I'm gonna go ahead and move it to that directory, let's go.
+
+10
+00:02:07.290 --> 00:02:11.619
+Marcus M Darden: Is that it? Okay. Alright, so here are…
+
+11
+00:02:13.760 --> 00:02:23.160
+Marcus M Darden: the files that I have, and this is a directory that should be like the one that you have. So if you haven't received all of these files.
+
+12
+00:02:23.230 --> 00:02:40.970
+Marcus M Darden: you can change into that directory and do a git pull. So you should do this from the command line. We'll go over that if you haven't figured that out yet in a second. But I do have the Lecture 0 stuff there, both pre and presented. I've got the Lecture 1 stuff, both pre and presented. Now I've added this Lecture XX,
+
+13
+00:02:41.000 --> 00:02:46.329
+Marcus M Darden: Git tutorial, so that's what I'm going to go through today, if you want to Fire up your…
+
+14
+00:02:49.620 --> 00:03:07.739
+Marcus M Darden: I might on notebook and look at it. I've also been told that you can do that in Visual Studio Code, so you can look at notebooks right in Visual Studio Code, which is nice. So there's that. Here's the transcripts of the two lectures that we've already had. I talked about those. Those are the slides that I'm not going to be dealing with.
+
+15
+00:03:09.030 --> 00:03:21.839
+Marcus M Darden: that just kind of live in the area now. Oh, you can see them all, there's the Lecture 0 slides, the Lecture 1 slides, and now there's the Lecture 2, sorry, the Lecture XX slide. So this is supposed to be, like, a half-lecture
+
+16
+00:03:23.620 --> 00:03:27.650
+Marcus M Darden: We can get back to the stuff from Lecture 1, so the,
+
+17
+00:03:29.330 --> 00:03:32.070
+Marcus M Darden: This thing is only designed to be about half a lecture.
+
+18
+00:03:35.790 --> 00:03:42.130
+Marcus M Darden: There we go. So yeah, it doesn't really have a serial number, so I just called it LectureXX.
+
+19
+00:03:42.480 --> 00:03:44.080
+Marcus M Darden: So it doesn't have a number.
+
+20
+00:03:45.590 --> 00:04:01.220
+Marcus M Darden: But it's the intro to Git, and we'll do a bunch of, live demo and some guided practice stuff. What we're trying to do is basically figure out how to get Git workflows together. What do I do to use Git? What do I learn from Git? What do I get from Git?
+
+21
+00:04:01.790 --> 00:04:03.919
+Marcus M Darden: How do I use it?
+
+22
+00:04:07.980 --> 00:04:13.030
+Marcus M Darden: For now, I guess I'll put that over there until I need some note-taking stuff over here.
+
+23
+00:04:17.230 --> 00:04:18.660
+Marcus M Darden: Power that…
+
+24
+00:04:49.020 --> 00:04:51.880
+Marcus M Darden: a new note over here, so I'm ready.
+
+25
+00:04:55.800 --> 00:05:00.600
+Marcus M Darden: And… let's make sure we've got a decent terminal.
+
+26
+00:05:16.600 --> 00:05:23.519
+Marcus M Darden: Alright, so, got a terminal here so I can do some stuff at terminal level. We'll mostly be looking at slides, so let me,
+
+27
+00:05:24.660 --> 00:05:26.640
+Marcus M Darden: This over to its own.
+
+28
+00:05:28.810 --> 00:05:29.530
+Marcus M Darden: Sure.
+
+29
+00:05:30.480 --> 00:05:37.070
+Marcus M Darden: I can come over here and… Alright, there we go.
+
+30
+00:05:37.240 --> 00:05:42.540
+Marcus M Darden: Ready to go. Questions before we get started? Everybody's in place, in good shape?
+
+31
+00:05:45.700 --> 00:05:49.880
+Marcus M Darden: So, we're trying to figure out why do we use version control and what Git is.
+
+32
+00:05:50.380 --> 00:06:04.660
+Marcus M Darden: It's really challenging. The challenging part of Git is the new mental model that you probably haven't dealt with in the past. So once we figure out what that is, it starts to get a little bit easier. There's three primary areas, a fourth, once we start using remotes.
+
+33
+00:06:05.460 --> 00:06:14.999
+Marcus M Darden: We're gonna make sure that it's installed and configured, then we're gonna start a repo and track some files, and just do some staging and committing and practice, figure out how to undo some things, and…
+
+34
+00:06:15.060 --> 00:06:29.339
+Marcus M Darden: learn more when we need to learn something, and then we'll take a brief glance at remotes, and then we'll move on. All right? So, at the end, we hope we can explain why version control exists. We want to be able to create Git repos and make clean commits.
+
+35
+00:06:32.560 --> 00:06:45.120
+Marcus M Darden: One of the cool things about it is it's like a time machine, but you've got this long log of everything that you've done in it, and that's very cool. So, you have to learn how to read that, and also how to fix small mistakes.
+
+36
+00:06:45.390 --> 00:06:51.089
+Marcus M Darden: There's a ton of things I could easily teach probably a full semester on Git.
+
+37
+00:06:52.070 --> 00:07:05.499
+Marcus M Darden: Plus, we've got a half lecture. So, we're gonna try to keep our Git use real straightforward and not get too off the rails. I will be, throughout the semester, probably adding more to your Git skills, just because
+
+38
+00:07:05.880 --> 00:07:13.000
+Marcus M Darden: It's good to have them. I'll just throw a little block in at the beginning of a lecture here and there to make sure we've got a new skill that we need.
+
+39
+00:07:13.540 --> 00:07:16.230
+Marcus M Darden: And, finding help when we need it.
+
+40
+00:07:16.620 --> 00:07:19.919
+Marcus M Darden: First of all, why do we use final version control?
+
+41
+00:07:20.090 --> 00:07:22.410
+Marcus M Darden: I remember back in the day, we would just…
+
+42
+00:07:22.550 --> 00:07:31.050
+Marcus M Darden: make a copy of everything, then make another copy of everything, and you would end up with some file that looks like final, final.
+
+43
+00:07:31.210 --> 00:07:43.600
+Marcus M Darden: final, final number one, and final, final number two. Here, this one was, like, final, final, really final, and so you're doing this so that you're like, oh, I made this edit, because you're trying to save some previous
+
+44
+00:07:44.590 --> 00:07:48.749
+Marcus M Darden: snapshot, essentially. That's the only reason why you keep modifying this.
+
+45
+00:07:48.750 --> 00:08:05.219
+Marcus M Darden: You say, there might be something good in this previous snapshot. I want to try something, so I don't want to blow that away. Let me just copy it over and do that. So, it can be really messy. We would love to not have to do that. And it takes a little bit of practice, but once you're into Git, you're just like, I'm just trying anything. I just…
+
+46
+00:08:05.250 --> 00:08:09.569
+Marcus M Darden: I've got a… checkpoints that I can go back to.
+
+47
+00:08:09.730 --> 00:08:12.639
+Marcus M Darden: I don't like what I did, just easily just undo it.
+
+48
+00:08:12.870 --> 00:08:16.720
+Marcus M Darden: So we can recover from our mistakes by time traveling, which is nice.
+
+49
+00:08:16.990 --> 00:08:29.839
+Marcus M Darden: We can collaborate, when we do collaborate, start working with a teammate or a larger team. It's good to be able to say, well, I can work on this while you're working on it, and I won't change what you've changed.
+
+50
+00:08:32.100 --> 00:08:42.960
+Marcus M Darden: And then the last thing that you can do pretty easily, which won't be that important when you're working all by yourself for the most of the semester, is when you have multiple people in there, you can see who did what.
+
+51
+00:08:42.970 --> 00:08:57.529
+Marcus M Darden: It's actually a command called git blame, and it will show you every line of a file and who wrote that line of the file. So when you see something crashing, you're like, git blamed? Steve, what the hell were you thinking? Did you even test that? Why would you commit that if it doesn't work?
+
+52
+00:08:57.590 --> 00:08:59.890
+Marcus M Darden: So, can let you do that.
+
+53
+00:09:02.510 --> 00:09:14.650
+Marcus M Darden: Git versus GitHub, we've talked about using GitHub, but for now, we're just going to be focused on Git. We will be getting some things from GitHub, but our active use on GitHub won't be very strong. We'll do a little bit.
+
+54
+00:09:14.810 --> 00:09:21.349
+Marcus M Darden: Git is the tool on your machine, it's a command line tool. It works really best when you're at a command line.
+
+55
+00:09:23.610 --> 00:09:28.080
+Marcus M Darden: there is an interface in VS Code, and
+
+56
+00:09:28.330 --> 00:09:42.430
+Marcus M Darden: Xcode, and every editor alive now has a Git interface built into it. And those can be a little bit GUI, so you can sort of mark a file, and then type something in, and it will do the commit for you.
+
+57
+00:09:42.680 --> 00:09:49.229
+Marcus M Darden: Those things always leave me feeling unsafe. It's not that they don't work, I know that they work perfectly fine.
+
+58
+00:09:49.540 --> 00:10:06.130
+Marcus M Darden: But, it's like, I have so much control when I'm at the command line, and I'm so used to having so much control that when I sort of have to let somebody else do something, I'm like, did you do exactly what I've done? Or… So, it would probably be best if I learned how to use it more.
+
+59
+00:10:06.130 --> 00:10:16.309
+Marcus M Darden: then I could feel comfortable using it, so if you can develop comfort with it, that's fine. I would still suggest the command line, because when you're in the command line and you're using it.
+
+60
+00:10:16.390 --> 00:10:18.939
+Marcus M Darden: You know exactly what's happening.
+
+61
+00:10:19.460 --> 00:10:20.260
+Marcus M Darden: Zach.
+
+62
+00:10:21.160 --> 00:10:24.169
+Marcus M Darden: So Git is this tool on your machine, it tracks changes.
+
+63
+00:10:24.410 --> 00:10:44.239
+Marcus M Darden: GitHub, and there's also another one, which is an open source version of that. It's called GitLab. We have a GitLab server here on campus, but the GitHub is the commonly used one. GitHub was bought by Microsoft back in 2018, I think. It's the largest source code repository on the planet.
+
+64
+00:10:44.430 --> 00:10:57.780
+Marcus M Darden: Everybody uses it. Everything's in there. You can make your own Git server, I've got a Git server at my house. And what a Git server is, is just like GitHub, without all the web page front end.
+
+65
+00:10:58.040 --> 00:11:00.029
+Marcus M Darden: So, at its heart.
+
+66
+00:11:01.340 --> 00:11:08.099
+Marcus M Darden: GitHub is just a Git server, so you can say, hey, push my changes to that server.
+
+67
+00:11:08.260 --> 00:11:19.609
+Marcus M Darden: But, in addition to that, it also has a really nice GUI front end, so that you can surf to pages and look at things that you could just as well do at the command line inside of your own repo.
+
+68
+00:11:19.610 --> 00:11:29.559
+Marcus M Darden: But Git makes it… GitHub makes it nice and easy to see. Bitbucket is another one by another company called Atlassian. You'll see that name around if you do any sort of searching in the Git
+
+69
+00:11:29.690 --> 00:11:34.150
+Marcus M Darden: scheme. So GitHub, GitLab, and Bitbucket, they're all hosted remotes.
+
+70
+00:11:35.310 --> 00:11:41.790
+Marcus M Darden: And you can use Git without any hosting service, which is mostly what we'll be doing here. Mostly just working locally.
+
+71
+00:11:45.390 --> 00:11:55.830
+Marcus M Darden: Git is this distributed version control system, and the distinction between a distributed version control system and a central code repository
+
+72
+00:11:56.270 --> 00:12:02.099
+Marcus M Darden: is in a central code repository. There is literally one source of truth.
+
+73
+00:12:03.360 --> 00:12:10.599
+Marcus M Darden: When you want to make changes to a file, you have to check that file out, then you make changes, and then you…
+
+74
+00:12:10.710 --> 00:12:17.019
+Marcus M Darden: check that file back in. If you've got a file checked out, nobody else on the team can check that file out.
+
+75
+00:12:18.130 --> 00:12:20.619
+Marcus M Darden: Because there is one source of truth.
+
+76
+00:12:20.800 --> 00:12:39.509
+Marcus M Darden: In Git, we use this distributed version control system where everyone has their own source of truth, locally. You have all the files, you have all control of all your files, and then what Git has built into it is the ability to say, okay, what happens when I need to join two different sources of truth?
+
+77
+00:12:39.950 --> 00:12:44.980
+Marcus M Darden: And it just can blow your mind what it does so well.
+
+78
+00:12:45.280 --> 00:12:49.020
+Marcus M Darden: promise, I've looked at it many times and just thought.
+
+79
+00:12:49.160 --> 00:13:06.610
+Marcus M Darden: I still don't understand how that works. And I look into it, I'm like, I got a better idea, but I just… in my mind, it's a really huge leap as to just how Git fixes it. And Git works purely with text. You can check binary files, like PDFs.
+
+80
+00:13:06.610 --> 00:13:11.020
+Marcus M Darden: Or I even have a repo with all of my…
+
+81
+00:13:11.290 --> 00:13:15.330
+Marcus M Darden: lecture slides for 281 in it, and lecture slides for 281 are
+
+82
+00:13:16.130 --> 00:13:30.130
+Marcus M Darden: PowerPoint decks, and that's some binary file format that Microsoft uses. So I can check them in there, and what that gives me is the ability to go back and find an old one, but I don't have the ability to see, hey, what changed from here to here?
+
+83
+00:13:30.140 --> 00:13:40.120
+Marcus M Darden: Whereas, if I'm looking at a text file, Git can say, hey, what is the difference between this and that? I say, oh, you added this line, and you subtracted that line, and you added this, and blah blah blah blah blah.
+
+84
+00:13:40.320 --> 00:13:59.749
+Marcus M Darden: That's how Git really likes to work with text, but you can use it with binary files. We typically don't use it for a whole lot, but as I said, I do still need some version control on my slides and say, I would love to get back to what was going on in Fall 25. Let me pull this deck from 25 and see what did I change there. So, it's a little bit less…
+
+85
+00:14:00.670 --> 00:14:19.999
+Marcus M Darden: I use GitLess, I can just pull it out, and so then what I have to do is I have to open one slide set and open another set, and I have to manually go between them to see what the difference is, so I lose some of the cool functionality of Git, but I still re… I still gain the ability to version control and label things, and if you use good commit messages, you can figure out what's done.
+
+86
+00:14:20.030 --> 00:14:27.600
+Marcus M Darden: So, every copy in this distributed version, like I said, has the full version of the truth, it has the full history of everything that's been done.
+
+87
+00:14:28.800 --> 00:14:36.499
+Marcus M Darden: And then when you make changes, and then push back to the central, then… Things get resolved.
+
+88
+00:14:36.800 --> 00:14:41.949
+Marcus M Darden: It's fast, it works offline, and like I said, it's the industry standard. Everyone's using it.
+
+89
+00:14:44.020 --> 00:14:45.670
+Marcus M Darden: Here's the mental model.
+
+90
+00:14:46.640 --> 00:14:48.800
+Marcus M Darden: We've got these 3 locations.
+
+91
+00:14:50.630 --> 00:14:55.740
+Marcus M Darden: There's the working directory. These are where your files are that you're currently editing.
+
+92
+00:14:57.470 --> 00:15:00.540
+Marcus M Darden: There's a staging area, also known as the index.
+
+93
+00:15:00.910 --> 00:15:04.379
+Marcus M Darden: And the staging areas, we say, I really like this, I'm gonna keep it.
+
+94
+00:15:06.090 --> 00:15:07.240
+Marcus M Darden: like this.
+
+95
+00:15:08.110 --> 00:15:13.689
+Marcus M Darden: And then there's the repository, where you say, have kept this.
+
+96
+00:15:14.350 --> 00:15:20.459
+Marcus M Darden: So your typical workflow is, you are in your working directory, you edit some stuff.
+
+97
+00:15:21.150 --> 00:15:28.070
+Marcus M Darden: And you push it to the staging area, and then you push it from the staging area into the repository.
+
+98
+00:15:29.020 --> 00:15:35.870
+Marcus M Darden: That's your typical workflow, and graphically, it's kind of gonna look like this. You've got your working directory.
+
+99
+00:15:36.160 --> 00:15:42.319
+Marcus M Darden: And you make edits, Then, when you use git add, it puts files into the staging area.
+
+100
+00:15:42.470 --> 00:15:46.790
+Marcus M Darden: And then when you use git commit, it writes them permanently into the repository.
+
+101
+00:15:47.800 --> 00:15:59.839
+Marcus M Darden: The cool thing about Git is, once it's committed, it is there. Even if you, like, back up and undo a thing, it keeps what you had there, unless you work hard to delete something that was
+
+102
+00:15:59.840 --> 00:16:12.430
+Marcus M Darden: previously committed. So, that's why it's super safe with Git. If you make a mistake, you can always find your code somewhere. Sometimes it can be harder than others, depending on how far you've wandered away from goodness, but you can usually find it.
+
+103
+00:16:12.890 --> 00:16:17.440
+Marcus M Darden: So, there's kind of our… workflow
+
+104
+00:16:17.560 --> 00:16:21.510
+Marcus M Darden: And we've got a bunch of commands, and they all are git, Word.
+
+105
+00:16:22.050 --> 00:16:27.690
+Marcus M Darden: Git add, git commit, git status, it's all Git and then another word.
+
+106
+00:16:28.160 --> 00:16:38.240
+Marcus M Darden: And some of the… the challenges of Git is they've got these weird sets of commands that function opposite
+
+107
+00:16:38.490 --> 00:16:44.989
+Marcus M Darden: but don't really fit the good name opposite. So, for instance, there's a command called git bush.
+
+108
+00:16:45.640 --> 00:16:55.970
+Marcus M Darden: You take something from your local repository, push it to a remote repository. There's also a command called git pull. Is it the opposite of git pull… push? No.
+
+109
+00:16:56.650 --> 00:16:59.370
+Marcus M Darden: The opposite of git push is git fetch.
+
+110
+00:17:01.940 --> 00:17:05.569
+Marcus M Darden: So when you do a git pull, it does a git fetch AND a git merge.
+
+111
+00:17:05.859 --> 00:17:11.290
+Marcus M Darden: So it does some things like that. Another command, git restore.
+
+112
+00:17:11.500 --> 00:17:21.020
+Marcus M Darden: You can use Restore to… restore something from that, but… when I use git add.
+
+113
+00:17:21.920 --> 00:17:25.750
+Marcus M Darden: See, it takes some changes in my working directory and puts them in the staging area.
+
+114
+00:17:25.970 --> 00:17:29.830
+Marcus M Darden: If I say get and restore dash dash stage.
+
+115
+00:17:30.120 --> 00:17:36.510
+Marcus M Darden: That's the opposite of git add. But git restore is not the opposite of git add, so…
+
+116
+00:17:36.890 --> 00:17:52.419
+Marcus M Darden: just… you have to be careful, and this is why I said there's so many little quirks about it that I don't feel comfortable letting some tool go do some things if I'm not sure it's using the options that I want to. So, that's why I do my command line Git whenever possible.
+
+117
+00:17:53.670 --> 00:18:04.329
+Marcus M Darden: So, this is just another version of that, right? We've got our working directory, when we edit files, then we use git add, that puts things in the staging area. We can use git restore stage.
+
+118
+00:18:04.900 --> 00:18:10.819
+Marcus M Darden: to go back to, it's not in the staging area. It's just a changed file.
+
+119
+00:18:12.130 --> 00:18:17.440
+Marcus M Darden: If I do that, then if I type git commit, there's nothing to commit, because it's not staged. So I edit.
+
+120
+00:18:17.590 --> 00:18:32.069
+Marcus M Darden: add, and then if I'm good with it, I can just say commit. You might wonder, well, why do I have this staging area? If I'm just trying to commit it, why would I have to add it and then commit it? What this allows you to do is, in larger projects, one
+
+121
+00:18:32.460 --> 00:18:36.950
+Marcus M Darden: commit… Might involve multiple files.
+
+122
+00:18:37.430 --> 00:19:01.389
+Marcus M Darden: So you say, I've changed this file, and this file, and this file, I'm gonna add all of them to the staging area, or I might change one, add it, change the next one, add it, change the next one, add it, and then commit all of that, because it is the same logical change. So that's why we've got the ability to, use the staging area. And there's just all kind of shortcuts and ways to break the rules, just like any system, there's ways to break the rules.
+
+123
+00:19:01.530 --> 00:19:08.879
+Marcus M Darden: Right? So, if I want to, I can commit a file straight from the working directory, completely bypassing
+
+124
+00:19:09.290 --> 00:19:13.120
+Marcus M Darden: The staging area. Yep. I can even commit multiple files.
+
+125
+00:19:13.420 --> 00:19:16.029
+Marcus M Darden: I have to work a little bit harder at it, but I can do it.
+
+126
+00:19:16.190 --> 00:19:19.680
+Marcus M Darden: So if you've got something staged, you say, oh no, I really want to commit this first.
+
+127
+00:19:19.880 --> 00:19:28.660
+Marcus M Darden: You can unstage and restage, or you can just kind of, like, loop around it. So that's a more advanced usage, but it's, it's not at all uncommon.
+
+128
+00:19:31.870 --> 00:19:39.639
+Marcus M Darden: So here's the commands that we're gonna learn and use the most for right now. There's git status, and git status, I think…
+
+129
+00:19:39.930 --> 00:19:44.959
+Marcus M Darden: I use Git Status, Just about every other command.
+
+130
+00:19:45.100 --> 00:20:01.689
+Marcus M Darden: git status, do a thing. Git status, do a thing. Git status, do a thing. Really nice for a GUI there to tell me things. That would be a reason to use a GUI, but the git status, you just, you're gonna use that a lot. A lot of people even alias that.
+
+131
+00:20:01.740 --> 00:20:08.530
+Marcus M Darden: GS or GST, so that you don't have to type so many characters with a word and space in there. You can do all you like.
+
+132
+00:20:09.380 --> 00:20:14.210
+Marcus M Darden: Git add, and then we give it some file or files that moves things.
+
+133
+00:20:14.480 --> 00:20:15.940
+Marcus M Darden: from Bitdeck.
+
+134
+00:20:16.140 --> 00:20:19.369
+Marcus M Darden: It moves them into the index, into the staging area.
+
+135
+00:20:21.150 --> 00:20:27.020
+Marcus M Darden: And this concept of moving is somewhat…
+
+136
+00:20:27.280 --> 00:20:32.840
+Marcus M Darden: logical and not physical. So when I've saved a file that's in my working directory.
+
+137
+00:20:33.090 --> 00:20:35.349
+Marcus M Darden: And then I say, stage it.
+
+138
+00:20:35.720 --> 00:20:45.589
+Marcus M Darden: I say I've moved it from the working directory into the staging area. It actually hasn't moved at all. It's still in the working directory, as you might expect, because it's one of my files.
+
+139
+00:20:45.970 --> 00:20:48.990
+Marcus M Darden: So, it's there, but it's also…
+
+140
+00:20:49.370 --> 00:20:58.969
+Marcus M Darden: set up at that particular version. So, imagine you did this. You edited something, and you saved it, and then you staged it, and then you edited it some more.
+
+141
+00:20:59.420 --> 00:21:09.750
+Marcus M Darden: So now there is two copies. There's a copy that's in your working directory, and there's a copy that's in the staging area. So if you type commit, you're gonna save the…
+
+142
+00:21:10.480 --> 00:21:16.610
+Marcus M Darden: thing to the repo before your most current edits. So, if you edit.
+
+143
+00:21:16.800 --> 00:21:20.930
+Marcus M Darden: Add, and then edit again. You can also add again.
+
+144
+00:21:21.240 --> 00:21:40.380
+Marcus M Darden: And it'll just take all of the changes and put them in the staging area. So, you might do that, it might happen from time to time, you'll edit something, you say, okay, I'm ready to commit this, I stage it, oh, I forgot to take that debug print out of there. You go back, take the debug print out, hit add again, and then it just takes the newest version of it. So, that's, not a…
+
+145
+00:21:40.620 --> 00:21:50.630
+Marcus M Darden: So that's git add, and then git commit. So, you're just gonna go add, commit, and later on, when we start using stuff online, you'll do pushes.
+
+146
+00:21:50.750 --> 00:21:52.650
+Marcus M Darden: There's a…
+
+147
+00:21:53.240 --> 00:22:03.170
+Marcus M Darden: There's a paper on somebody's door upstairs, I forget which floor it's on. It says, in case of fire, git add, git commit, git push, then run like hell.
+
+148
+00:22:03.260 --> 00:22:22.049
+Marcus M Darden: So, that's how you make sure your code doesn't get lost, but it's that add commit push when we take things remotely, but when we do add commit, that's all we need locally to have all of our history saved for us. We can say git commit, and then if you just leave it like that, it wants to have a message with it.
+
+149
+00:22:22.050 --> 00:22:31.339
+Marcus M Darden: That's why I said earlier, it's like, we can track everything that happens, we know how to blame somebody, so not only do you have to give it your name, your email address.
+
+150
+00:22:31.860 --> 00:22:37.040
+Marcus M Darden: When you make a commit, it's gonna put your name and email address on that, and it wants to have a message.
+
+151
+00:22:38.110 --> 00:22:43.760
+Marcus M Darden: So, if you don't give it a message, it will open up an editor and say, I'm waiting for you to give me a message.
+
+152
+00:22:43.810 --> 00:23:00.349
+Marcus M Darden: Right? If you give it this dash n flag, you can put a short message right there at the command line. Some people say you shouldn't do the short version. I get lazy sometimes. But the more expressive your commit messages are, the more you're able to understand what you did and why.
+
+153
+00:23:00.680 --> 00:23:04.920
+Marcus M Darden: So, there's git commit, and all of these commands have multiple
+
+154
+00:23:04.920 --> 00:23:21.069
+Marcus M Darden: dash M's or dash dash one lines that you can use to configure how they work, and that's, you know, that's what just comes with using it over and over again. Once you've got a skill, then you say, well, I'd like to tweak that skill just a little bit. Oh, so I really want to do git add minus use, what I really want. You'll understand that later.
+
+155
+00:23:21.670 --> 00:23:26.980
+Marcus M Darden: Once I've added and committed, when I want to see what history looks like.
+
+156
+00:23:27.170 --> 00:23:29.559
+Marcus M Darden: I just use git log most of the time.
+
+157
+00:23:30.520 --> 00:23:37.020
+Marcus M Darden: As we're working on these slides, we came up with git log one line, and I'll show you the difference between the two of those things.
+
+158
+00:23:38.580 --> 00:23:45.329
+Marcus M Darden: There's a bunch of different ways that you can configure the log command to print things out the way you want to see what's going on in history.
+
+159
+00:23:45.610 --> 00:23:50.680
+Marcus M Darden: Undo staging, as I mentioned earlier. Git restore dash dash staged file.
+
+160
+00:23:50.900 --> 00:23:55.259
+Marcus M Darden: Now, what happens if you don't use dash dash staged?
+
+161
+00:23:58.610 --> 00:23:59.780
+Marcus M Darden: Danger.
+
+162
+00:24:00.190 --> 00:24:14.480
+Marcus M Darden: That's what's so terrible. We use git restore dash dash stage to save us, but git restore might just kill us. So, what restore does, it says, I'm gonna grab from the repo and overwrite what's in the working directory.
+
+163
+00:24:14.590 --> 00:24:20.580
+Marcus M Darden: So if you've made some changes, and then you type git restore, all your changes are gone, permanently, they're gone.
+
+164
+00:24:20.760 --> 00:24:21.830
+Marcus M Darden: Just gone.
+
+165
+00:24:22.540 --> 00:24:28.209
+Marcus M Darden: Nothing is permanent until you commit it. So, git restore without the dash dash staged.
+
+166
+00:24:28.360 --> 00:24:36.789
+Marcus M Darden: can blow things up. What stash-stage does says, it's still gonna overwrite what's in your working directory, so if you do an edit.
+
+167
+00:24:37.640 --> 00:24:40.270
+Marcus M Darden: Add… arrogant.
+
+168
+00:24:40.950 --> 00:24:44.710
+Marcus M Darden: Restore staged, You're gonna blow those changes away.
+
+169
+00:24:46.650 --> 00:24:52.610
+Marcus M Darden: If you do an edit, save, and then you do a restore, you're gonna blow those changes away from the repo.
+
+170
+00:24:52.940 --> 00:25:09.699
+Marcus M Darden: When you do the dash dash staged, it pulls it away from what's staged. When you do no staged, it pulls it away from the repo. So both of them are really going to overwrite what's in your working directory, no matter what. It's just typically, when you're doing from staged, you're meaning a different thing than when you do it without from staged.
+
+171
+00:25:10.800 --> 00:25:16.240
+Marcus M Darden: You can do git restore stage, and all of these things that say file after them, you can save more files if you need to.
+
+172
+00:25:16.450 --> 00:25:27.580
+Marcus M Darden: And then when you want to discard local edits, right there, it says git restore, so that's going to say anything that I've already worked on in my working directory, I'm just throwing it away. So that's what git restore will do.
+
+173
+00:25:28.650 --> 00:25:37.450
+Marcus M Darden: Alright, so to get this thing installed, here's a few different ways to do it. You can use Git Bash if you're a Windows user.
+
+174
+00:25:37.520 --> 00:25:49.190
+Marcus M Darden: And Git Bash is a Windows program that also includes a terminal so that you can do command line Git. But it's a regular program, so it's not just a terminal.
+
+175
+00:25:49.550 --> 00:25:58.290
+Marcus M Darden: Macos, you just jump into the terminal. I don't use Terminal App on my Mac OS. I've installed another app that's called iTerm2.
+
+176
+00:25:58.540 --> 00:26:06.370
+Marcus M Darden: It's a similar program that's just got some more functionality. But if you use Terminal, alright, you'll see me using our term too, so it might not look exactly like yours.
+
+177
+00:26:06.730 --> 00:26:17.480
+Marcus M Darden: That's kind of what my I-term2 looks like if I say terminal, Looked like that.
+
+178
+00:26:18.170 --> 00:26:24.249
+Marcus M Darden: Just because that's how that one's… I could configure this one to look a bit more like that, but I just don't use this one as much.
+
+179
+00:26:24.650 --> 00:26:25.460
+Marcus M Darden: So…
+
+180
+00:26:25.610 --> 00:26:43.389
+Marcus M Darden: Anything that does give you terminal access on a Mac, though, is gonna be fine. And Git will be installed. If it's not, you might have to install it. If you've installed any development tools, Git will be on there. But if you haven't, then if you do a Brew install Git. If you don't have Brew, you might check out Homebrew.
+
+181
+00:26:43.760 --> 00:26:57.619
+Marcus M Darden: Homebrew is a package manager that lets you install stuff, so look up Homebrew, and use brew install git if you need to. On Linux, the same sort of thing. This is the WSL, if you're using WSL, on your Windows boxes.
+
+182
+00:26:57.870 --> 00:26:59.829
+Marcus M Darden: That lets you run a little…
+
+183
+00:27:00.390 --> 00:27:11.269
+Marcus M Darden: Linux kernel as you're running Ubuntu inside of Windows. So if you do that, then you might have to do act install git, or DNF install git. One of those two commands will install
+
+184
+00:27:11.610 --> 00:27:13.110
+Marcus M Darden: get for you.
+
+185
+00:27:13.580 --> 00:27:15.020
+Marcus M Darden: on the Linux side.
+
+186
+00:27:16.980 --> 00:27:31.240
+Marcus M Darden: Once that's done, you should be able to type git dash dash version, and it will respond that it knows about the thing, right? Git dash dash version. You don't really care what that is, but if that doesn't respond well, that just means git is not installed.
+
+187
+00:27:31.700 --> 00:27:38.940
+Marcus M Darden: So here I can see that I've got this Git version 2.50.1, and that's the one that was installed by Apple. I didn't install a separate one.
+
+188
+00:27:39.130 --> 00:27:39.970
+Marcus M Darden: I think.
+
+189
+00:27:40.260 --> 00:27:42.879
+Marcus M Darden: I don't even remember But it works.
+
+190
+00:27:43.140 --> 00:27:44.020
+Marcus M Darden: Alright.
+
+191
+00:27:45.330 --> 00:27:59.879
+Marcus M Darden: After we've got it installed, you're gonna have to set your identity. Remember I told you earlier, it wants to know who does a thing, so when you commit, it's going to put your name and email address on it, so somebody can complain to you when you've broken things.
+
+192
+00:28:00.150 --> 00:28:08.049
+Marcus M Darden: So, if you try to commit before it does that, it will put some anonymous stuff on there and continue to nag at you. Git is very, very talkative.
+
+193
+00:28:08.200 --> 00:28:17.890
+Marcus M Darden: When it doesn't like a thing, it'll tell you. When it thinks you should be doing something else, it will say, did you mean to do this? If you want to do that, try this. It's very, very, very, very talkative.
+
+194
+00:28:18.320 --> 00:28:30.119
+Marcus M Darden: But, if you try to commit before you've added your username in there, then it will complain and say, you know, it will say that it was an anonymous thing. So, you'll just have to do this once.
+
+195
+00:28:30.330 --> 00:28:42.100
+Marcus M Darden: You say git config, and then add this global flag, which adds this to the overall… every repo is gonna think of you as Hayden Lovelace.
+
+196
+00:28:42.400 --> 00:28:43.300
+Marcus M Darden: Right?
+
+197
+00:28:43.410 --> 00:28:50.080
+Marcus M Darden: So you can do git config local, and that will make configuration changes to the current repo.
+
+198
+00:28:50.600 --> 00:28:54.379
+Marcus M Darden: And the current repo changes override the
+
+199
+00:28:54.560 --> 00:29:02.160
+Marcus M Darden: the global ones. So, why would you do something like that? Maybe I've got some job that I work at.
+
+200
+00:29:02.390 --> 00:29:16.609
+Marcus M Darden: And I want to use my… the name that they call me at that job, and my email from that job. So, inside of that repo, I say my local configuration for this repo has my work email address and work title.
+
+201
+00:29:16.870 --> 00:29:19.979
+Marcus M Darden: But when I work on my own projects at home.
+
+202
+00:29:20.190 --> 00:29:33.320
+Marcus M Darden: I want to use my own email address, because I don't want people emailing my job to talk about why did I do this on GitHub. So, you might set your global to be the UU, personal U, and then you might, whenever you've got some
+
+203
+00:29:34.040 --> 00:29:43.799
+Marcus M Darden: repo, you might jump into that and say, I'm going to set some local configs so that I can override that. So, like I said, the local overrides the goal.
+
+204
+00:29:44.480 --> 00:30:02.940
+Marcus M Darden: So, once you do this, you should be fine, unless you're trying to, like I said, work in multiple contexts. Just setting the config to, update your username and email is fine. You do have to have the quotes if there's a space there. You don't have to use the quotes in the email example there.
+
+205
+00:30:03.370 --> 00:30:13.859
+Marcus M Darden: Just because there's no spaces. It just knows how to pull a token. So, if it's got quotes, then it says, okay, the token is between these two quotes, so if there's spaces involved, I would use that as well.
+
+206
+00:30:14.230 --> 00:30:17.499
+Marcus M Darden: And then there's some optional stuff, the quality of life stuff.
+
+207
+00:30:17.980 --> 00:30:23.119
+Marcus M Darden: The core editor.
+
+208
+00:30:23.220 --> 00:30:29.120
+Marcus M Darden: Here, and the command that you use to spin off the coordinator is just code.
+
+209
+00:30:29.500 --> 00:30:33.469
+Marcus M Darden: Dash, dash, wait. So code is VS Code.
+
+210
+00:30:33.620 --> 00:30:39.820
+Marcus M Darden: whatever machine you're on, if you've got VS Code installed, the way that you can start it from the command line is just say code.
+
+211
+00:30:40.740 --> 00:30:53.029
+Marcus M Darden: And if you give it this wait flag, then the program that's kicking off the editor waits until you close the editor to move forward. So this is important, like, when you want to do a commit.
+
+212
+00:30:53.440 --> 00:30:55.409
+Marcus M Darden: Says, okay, well, I need a message.
+
+213
+00:30:55.630 --> 00:31:05.019
+Marcus M Darden: it opens up a VS Code window, you make some edits, and when you're done, you close the window, and then the commit can continue. But until you close the window, it's waiting.
+
+214
+00:31:06.030 --> 00:31:13.800
+Marcus M Darden: And then the other one down here, this git config global init default branch main. So…
+
+215
+00:31:14.250 --> 00:31:16.189
+Marcus M Darden: You know, we are in a…
+
+216
+00:31:16.400 --> 00:31:24.299
+Marcus M Darden: A modern changing of the way we do things, and talk about things, and deal with people, and all of that stuff.
+
+217
+00:31:25.400 --> 00:31:31.109
+Marcus M Darden: The original version of… Get used to call the main branch.
+
+218
+00:31:31.210 --> 00:31:33.750
+Marcus M Darden: Sorry, I used to call the default branch.
+
+219
+00:31:33.950 --> 00:31:35.050
+Marcus M Darden: Master.
+
+220
+00:31:35.690 --> 00:31:38.969
+Marcus M Darden: As in… Master and slave!
+
+221
+00:31:39.310 --> 00:31:43.750
+Marcus M Darden: And so… People said we shouldn't use that type of language.
+
+222
+00:31:44.270 --> 00:32:00.129
+Marcus M Darden: And then, just over the last couple of years, most of the gits now automatically go with main, but if you ever look in some older repos, you might find branches called master. Master was the default in the past. When you created a new repo, you were already on the master branch.
+
+223
+00:32:00.890 --> 00:32:07.740
+Marcus M Darden: So… however you feel about, DEI and things like that.
+
+224
+00:32:08.370 --> 00:32:14.509
+Marcus M Darden: This is where you can change that. If you really want to go with master, you can change it with that line. If you want to call it
+
+225
+00:32:15.660 --> 00:32:34.169
+Marcus M Darden: my branch, this is where you change it. So when you create a new repo, it defaults to that branch. So these things you only have to do once because it writes them into a permanent file, and then every time you use Git after that, it edits that… references that file. You can edit and change them if you like.
+
+226
+00:32:34.470 --> 00:32:37.750
+Marcus M Darden: But… You don't have to once you've done it once.
+
+227
+00:32:38.550 --> 00:32:43.950
+Marcus M Darden: Alright, so, here's what we're gonna do. We're going to create a repo.
+
+228
+00:32:44.270 --> 00:32:49.129
+Marcus M Darden: And typically, repos are all in their own directory.
+
+229
+00:32:49.320 --> 00:32:56.350
+Marcus M Darden: So from the command line, what I would do is create a directory with maker, and then I would change into that directory.
+
+230
+00:32:56.560 --> 00:33:06.100
+Marcus M Darden: Now that I'm there, I can do my very first git command, which is git init. Git init turns this directory into a repo.
+
+231
+00:33:06.890 --> 00:33:09.409
+Marcus M Darden: It creates this hidden folder.
+
+232
+00:33:10.120 --> 00:33:23.410
+Marcus M Darden: in that directory, and in the Unix tradition, any file that begins with a period, we call them dot files, and they're there, but if you ask for the listing of this directory, it just hides those.
+
+233
+00:33:23.550 --> 00:33:38.549
+Marcus M Darden: You can say, I want to see the hidden files. LS shows me all the files, except the hidden ones. LS-A shows me all the hidden ones. So, if I'm here, what did I say we were going to do?
+
+234
+00:33:38.790 --> 00:33:41.670
+Marcus M Darden: Let me get to… where I've kept this.
+
+235
+00:33:45.260 --> 00:33:49.950
+Marcus M Darden: Alright, so if I come here and I say,
+
+236
+00:33:50.200 --> 00:33:51.789
+Marcus M Darden: Gonna go out there, that's better.
+
+237
+00:33:52.480 --> 00:33:56.929
+Marcus M Darden: Let's make Durr, and… Not you.
+
+238
+00:33:59.560 --> 00:34:02.530
+Marcus M Darden: Victor, I said, demo, get.
+
+239
+00:34:03.140 --> 00:34:08.089
+Marcus M Darden: Alright, so by doing LS, you'll see I just created this directory.
+
+240
+00:34:08.409 --> 00:34:14.290
+Marcus M Darden: And you see that I don't see anything other than things that are there. There might be some hidden files. If I see LS minus A,
+
+241
+00:34:14.330 --> 00:34:30.749
+Marcus M Darden: You'll see there are two other files in that directory, one that's called dot, and another one's called dot dot. And those are just shortcuts in the Unix tradition. Dot means the current directory, and dot dot means the parent directory, whatever I got out of to get into here.
+
+242
+00:34:31.389 --> 00:34:39.269
+Marcus M Darden: So… I'm gonna CD into demo Git, And type git init.
+
+243
+00:34:40.620 --> 00:34:57.659
+Marcus M Darden: There you go. It says, initialized an empty Git repository, and it tells me where it stuck that thing. Turns out it's in this folder, but in a hidden folder there.git. So I'll do the same sort of thing. You see, I created that directory, jumped in there, it's still dead empty.
+
+244
+00:34:57.800 --> 00:35:02.120
+Marcus M Darden: Because I didn't do anything with any files. But if I type ls minus A,
+
+245
+00:35:02.260 --> 00:35:11.809
+Marcus M Darden: you'll see that there is a .git directory in there, and that's a full directory, so if I want to, I can do ls git, and it tells me there's a whole bunch of stuff in there.
+
+246
+00:35:14.850 --> 00:35:20.919
+Marcus M Darden: There's a config, that's a file where all of your local configs go. You don't need to know this stuff.
+
+247
+00:35:21.200 --> 00:35:32.770
+Marcus M Darden: But if you want to, you can just edit stuff there by hand, or you can use the git config command. The other things are how Git is the database that how Git stores all of your changes.
+
+248
+00:35:32.990 --> 00:35:43.020
+Marcus M Darden: in objects, and refs, and description, hooks. Hooks is where you can put stuff to say, when I do this, before that happens, call some function.
+
+249
+00:35:43.030 --> 00:35:59.720
+Marcus M Darden: or do something. Run this script after I get done, so that it automatically labels something or whatever. So hooks are a way that you can do some automation, but we won't mess with that either. This is not a Git class. But, as you see, I've created this repo, and I have everything that I need.
+
+250
+00:36:00.590 --> 00:36:06.770
+Marcus M Darden: The folder is my history database, the rest of my files are normal files, which in this case is exactly none, because it's empty.
+
+251
+00:36:07.280 --> 00:36:09.049
+Marcus M Darden: So let's add a README.
+
+252
+00:36:11.840 --> 00:36:18.040
+Marcus M Darden: I'm gonna create a file and check its status. So, here, I'm just gonna use the echo command, and the echo command…
+
+253
+00:36:18.300 --> 00:36:21.650
+Marcus M Darden: Takes, and whatever you give it, that echoes it.
+
+254
+00:36:22.240 --> 00:36:24.609
+Marcus M Darden: Pretty straightforward. It does what it says.
+
+255
+00:36:25.110 --> 00:36:36.020
+Marcus M Darden: Then, that greater than sign is known as file redirection. It says, rather than having that echo to the screen, dump it into a file named readme.md.
+
+256
+00:36:36.160 --> 00:36:42.940
+Marcus M Darden: So, I'll try that, and just see what it looks like. I say echo, Demo Git.
+
+257
+00:36:43.690 --> 00:36:45.570
+Marcus M Darden: There you go. It echoed it.
+
+258
+00:36:46.550 --> 00:37:02.949
+Marcus M Darden: Right? I said echo demo git, it turned around and printed it for me. So, by doing LS, there's no files created, because I told it to do a command, it did the command. Now, if I want to, I can say, echo that, but instead of printing to the screen, put it into the README.
+
+259
+00:37:04.240 --> 00:37:06.739
+Marcus M Darden: Now you'll see it doesn't go to the screen at all.
+
+260
+00:37:06.950 --> 00:37:13.829
+Marcus M Darden: Because the output was redirected into a file named readme.md. The file didn't exist.
+
+261
+00:37:15.700 --> 00:37:17.090
+Marcus M Darden: Linux don't care.
+
+262
+00:37:17.360 --> 00:37:26.729
+Marcus M Darden: the file doesn't exist, and you say, stick some stuff in a file, it's gonna create the file. So now, if I type ls, you'll see there is a readme.md here.
+
+263
+00:37:27.450 --> 00:37:30.320
+Marcus M Darden: And if I want to see what's in that, I can use CAT.
+
+264
+00:37:31.480 --> 00:37:40.140
+Marcus M Darden: it'll tell me what's in there. It's got that same line that I told it to print, but inside the file, if I want to edit the file, I can do code.
+
+265
+00:37:40.360 --> 00:37:41.730
+Marcus M Darden: this directory.
+
+266
+00:37:42.270 --> 00:37:55.980
+Marcus M Darden: Right? Yes, I trust the authors, that's me. But here's this readme.md file, and just like you saw me edit it, I edited at the command line, and it's got that demo get in there. If I wanted to change the file now, I could.
+
+267
+00:37:56.130 --> 00:37:58.030
+Marcus M Darden: But for now, I'm not going to.
+
+268
+00:37:58.600 --> 00:37:59.440
+Marcus M Darden: Alright.
+
+269
+00:38:01.020 --> 00:38:02.569
+Marcus M Darden: So far, so good?
+
+270
+00:38:03.960 --> 00:38:04.970
+Marcus M Darden: Excellent.
+
+271
+00:38:06.170 --> 00:38:12.179
+Marcus M Darden: So, we were supposed to check our status, though, we did not. So, let's say get status.
+
+272
+00:38:13.070 --> 00:38:26.550
+Marcus M Darden: It says, I'm on branch main, very important, you need to know where you're making changes. So the first thing it always tells you is, where are you in the project? We'll talk about branches later, not today.
+
+273
+00:38:26.910 --> 00:38:41.150
+Marcus M Darden: But branches is a cool way to be like, hey, this works exactly like I want it to, but I want to try this crazy-ass stuff over here. So let me branch off, and I get to hacking away on it, and if it's broken, and I just say, okay, switch back to that other branch, and I'm good.
+
+274
+00:38:41.700 --> 00:38:46.020
+Marcus M Darden: Right? Later on, you can say, well, I got this crazy thing to work.
+
+275
+00:38:46.360 --> 00:38:49.430
+Marcus M Darden: Now what I want to do is I'm going to jump back to the main branch.
+
+276
+00:38:49.730 --> 00:39:05.570
+Marcus M Darden: and merge those changes from the crazy-ass branch back into the current branch. And that way, I can incorporate them, and they will be working. So it allows you to keep two versions, like the working version and the experimental version, and any number of experimental versions.
+
+277
+00:39:05.570 --> 00:39:13.700
+Marcus M Darden: You have feature branches, where you say, I'm gonna add this new feature, I need to be able to read this kind of file. I got a feature branch to do that. Once I'm done, I go to the main branch.
+
+278
+00:39:13.700 --> 00:39:26.659
+Marcus M Darden: And then I merge those changes back in, and the main branch can now read those types of files. If I got multiple features where I'm opening this type of file and writing to that type of file, those are two different features. You probably don't want to work on them at the same time.
+
+279
+00:39:26.980 --> 00:39:29.739
+Marcus M Darden: You probably shouldn't, especially if you're working in a larger…
+
+280
+00:39:29.970 --> 00:39:35.780
+Marcus M Darden: larger sphere where there's other people. Somebody's working on part of this over here, you're working on part of it over there, so stay in your lane.
+
+281
+00:39:35.980 --> 00:39:40.749
+Marcus M Darden: So, here we say that I'm on branch main, it says there have been no commits.
+
+282
+00:39:41.280 --> 00:39:59.369
+Marcus M Darden: there are untracked files, and it's called readme.md. So an untracked file is a file that's in the working directory, but Git doesn't know about. Git can see it, obviously, it's told me it's right there, but it's not in the repo. It's just in the folder where the repo lives.
+
+283
+00:39:59.370 --> 00:40:03.530
+Marcus M Darden: So this is something that's an example of readme.md.
+
+284
+00:40:03.850 --> 00:40:17.050
+Marcus M Darden: lives in the working directory. It has not been through the staging area, it has not been added to the repository. So it's only in the working directory. It says nothing has been added to commit.
+
+285
+00:40:17.840 --> 00:40:24.289
+Marcus M Darden: But, untracked files are present. If you want to track it, use git add. What'd I tell you?
+
+286
+00:40:24.880 --> 00:40:42.040
+Marcus M Darden: Even before that, it's like, untracked files, use git add. This is how you can include it in what will be committed. So, I think that was our next slide, so let's truck back over there. So, we checked out status, and there's also, SB. Let's try that one. Status…
+
+287
+00:40:42.320 --> 00:40:43.809
+Marcus M Darden: Git status.
+
+288
+00:40:46.570 --> 00:40:47.470
+Marcus M Darden: That's beef.
+
+289
+00:40:49.010 --> 00:40:56.010
+Marcus M Darden: So, you see, This is a shorter version of it. It tells me no commits yet.
+
+290
+00:40:56.250 --> 00:41:02.590
+Marcus M Darden: It tells me I'm on main, and then it gives me a listing of all the files and their current state. There's only one file.
+
+291
+00:41:02.760 --> 00:41:05.890
+Marcus M Darden: And it's README, so it's at this state where it's question mark, question mark.
+
+292
+00:41:06.110 --> 00:41:09.420
+Marcus M Darden: So, it's untracked.
+
+293
+00:41:09.560 --> 00:41:13.070
+Marcus M Darden: But once I have stuff in there, it will tell me if something is
+
+294
+00:41:14.920 --> 00:41:28.829
+Marcus M Darden: in the repo, it will tell me if something has been modified in need of a commit, or if something is untracked, and we'll see that as we work forward. So, Git Status SB is a shorter version of it, and you can sort of get some real
+
+295
+00:41:29.250 --> 00:41:32.709
+Marcus M Darden: Quick glances, especially in larger file sets.
+
+296
+00:41:32.920 --> 00:41:33.790
+Marcus M Darden: Alright.
+
+297
+00:41:35.560 --> 00:41:41.249
+Marcus M Darden: Untracked means Git sees it, but is not tracking it yet, so Git can't remember it if you don't commit it.
+
+298
+00:41:41.650 --> 00:41:44.209
+Marcus M Darden: It can see it, but it's not gonna do anything for you.
+
+299
+00:41:44.590 --> 00:41:46.370
+Marcus M Darden: So now we're gonna add some notes.
+
+300
+00:41:46.770 --> 00:41:49.249
+Marcus M Darden: Do we not commit that? We did not commit that, do we?
+
+301
+00:41:51.860 --> 00:41:53.159
+Marcus M Darden: Let's add some notes.
+
+302
+00:41:53.390 --> 00:41:55.389
+Marcus M Darden: I'm gonna use this echo command again.
+
+303
+00:41:55.500 --> 00:42:00.770
+Marcus M Darden: And I'm just gonna echo hello into this notes file. Same sort of thing.
+
+304
+00:42:01.230 --> 00:42:06.850
+Marcus M Darden: Echo, hello, and dump that into a new file named notes.txt.
+
+305
+00:42:07.400 --> 00:42:09.600
+Marcus M Darden: One thing to be very…
+
+306
+00:42:09.750 --> 00:42:16.390
+Marcus M Darden: clear on when I use that file redirection, that greater than, it takes the output and dumps it into a file.
+
+307
+00:42:16.710 --> 00:42:23.039
+Marcus M Darden: If that file already exists, it takes that output and dumps it into the file, completely overriding what was there.
+
+308
+00:42:23.410 --> 00:42:30.160
+Marcus M Darden: So, just be careful when you're using that. If you don't want to blow stuff away, then you can say…
+
+309
+00:42:30.890 --> 00:42:38.630
+Marcus M Darden: Echo… World… But… appendedToNotes.txt.
+
+310
+00:42:38.940 --> 00:42:43.580
+Marcus M Darden: So now there's echo on one line, there's hello on one line, and World on the next.
+
+311
+00:42:45.750 --> 00:42:52.990
+Marcus M Darden: Right? And you can see that if I just type cat, notes concatenated to the screen. Now, you see if I say echo hello.
+
+312
+00:42:54.630 --> 00:43:01.270
+Marcus M Darden: and put that into notes.txt, I've flown away what I had before, so the only thing that's in there is hello.
+
+313
+00:43:01.450 --> 00:43:04.530
+Marcus M Darden: So, that's how file redirection works. We've got
+
+314
+00:43:04.970 --> 00:43:07.749
+Marcus M Darden: Write to file, we've got append to file.
+
+315
+00:43:07.880 --> 00:43:09.659
+Marcus M Darden: Greater, and double greater.
+
+316
+00:43:10.030 --> 00:43:16.480
+Marcus M Darden: Alright, so, now I've got this notes file, and they also warned us that we should type a git status
+
+317
+00:43:16.990 --> 00:43:24.149
+Marcus M Darden: If I look at it like this, there's the long version, get status, SB… Books like that.
+
+318
+00:43:25.060 --> 00:43:37.810
+Marcus M Darden: So, now I know the same things from both of these things. I've got these two untracked files, one named readme.md, one named notes.txt. So, any changes in those files are obviously not in the repo if they are not being tracked.
+
+319
+00:43:37.890 --> 00:43:45.240
+Marcus M Darden: So, I think the next thing that we're gonna do here is try to make something go out of that. So, okay, we did this. We saw the notes when we did status.
+
+320
+00:43:45.890 --> 00:43:49.350
+Marcus M Darden: Now, let's figure out how we're gonna stage some stuff.
+
+321
+00:43:49.650 --> 00:43:53.120
+Marcus M Darden: Git add is how we move things from
+
+322
+00:43:53.960 --> 00:44:00.630
+Marcus M Darden: the working directory into the staging area. So I'm just gonna add gitNotes.txt and then check my status.
+
+323
+00:44:01.010 --> 00:44:02.649
+Marcus M Darden: Add notes.
+
+324
+00:44:03.800 --> 00:44:21.780
+Marcus M Darden: No response. Most of our Unix commands, when they execute properly, they don't say a thing. So, you can assume here that nothing was error messaged. That probably worked. I can use git status to check it out. We see now it looks a little different. Let me clean up and try that again. OnMay, no commits.
+
+325
+00:44:23.300 --> 00:44:30.180
+Marcus M Darden: Now it tells me the changes that are going to be committed, that's new file, it's a new file, it's called notes.txt.
+
+326
+00:44:30.420 --> 00:44:38.859
+Marcus M Darden: And then there's still untracked files, that's readb.md. There's also some extra helpful stuff in there that says, hey, if you want to unstage this.
+
+327
+00:44:40.120 --> 00:44:43.499
+Marcus M Darden: I can do a git rm dash dash cached.
+
+328
+00:44:44.240 --> 00:44:46.190
+Marcus M Darden: File to unstage it.
+
+329
+00:44:48.830 --> 00:44:52.510
+Marcus M Darden: how that's different from git restore dash dash stage.
+
+330
+00:44:53.340 --> 00:44:59.830
+Marcus M Darden: I don't know. It might only work of the thing… I don't know. I don't… that's what gets us, for now.
+
+331
+00:45:01.790 --> 00:45:10.589
+Marcus M Darden: Git add file will… okay, so there we go. So, I've got that ready, and what did I say I was gonna do? Check the status. I did. If I wanted to check the short version of status.
+
+332
+00:45:13.920 --> 00:45:17.829
+Marcus M Darden: There you go. So you can see how the short version kind of works there.
+
+333
+00:45:21.410 --> 00:45:24.880
+Marcus M Darden: A has been added, it's in the staging area.
+
+334
+00:45:26.060 --> 00:45:29.459
+Marcus M Darden: Sorry, notes has been added, it's in the staging area, README has not.
+
+335
+00:45:33.650 --> 00:45:36.690
+Marcus M Darden: We're going to… we did check that, yeah, that's good.
+
+336
+00:45:37.270 --> 00:45:42.159
+Marcus M Darden: Capture a clean snapshot. There we go. Let's do a git commit minus m add node files.
+
+337
+00:45:42.400 --> 00:45:49.120
+Marcus M Darden: Git commit, I'm gonna give it the message, And… Notes file.
+
+338
+00:45:51.580 --> 00:45:53.989
+Marcus M Darden: And there we see, we get this message back.
+
+339
+00:45:53.990 --> 00:46:18.229
+Marcus M Darden: And I get my message, it tells me I'm on the main, I got my root commit, and then we have this hash here, and it's much longer than this, it's about 30 characters long, but any version of it that you use that's unique, Git will be fine with. So, I could probably just refer to this as A9, because there's no other commits. But later on, I might have a commit that also starts with A9, so you have to have enough of this to be unique.
+
+340
+00:46:18.230 --> 00:46:25.679
+Marcus M Darden: And usually, 6 to 7 characters is really good. So, later on, you might use Git IDs like that.
+
+341
+00:46:25.820 --> 00:46:37.509
+Marcus M Darden: And so there's message adds notes file. One file changed, there was one insertion, there was one line that I changed in that file, and the create mode, this thing tells me about that file. Now, if I do a git status.
+
+342
+00:46:38.560 --> 00:46:40.049
+Marcus M Darden: It looks like that.
+
+343
+00:46:40.430 --> 00:46:43.659
+Marcus M Darden: The thing that's been added to the repo is just gone now.
+
+344
+00:46:44.050 --> 00:46:59.340
+Marcus M Darden: At least from status, because it says, okay, you put it in the repo, it's good. You don't have to worry about it. The only thing you really need to worry about is what's going on. What does it tell me now? It tells me I'm on branch main, it doesn't say that I have no commits yet. It does say…
+
+345
+00:46:59.780 --> 00:47:07.130
+Marcus M Darden: untracked files exist, but nothing has been added, so if I try to do a commit, it won't do anything. So what happens when I SB this?
+
+346
+00:47:09.410 --> 00:47:10.379
+Marcus M Darden: There you go.
+
+347
+00:47:10.830 --> 00:47:12.820
+Marcus M Darden: tells me I'm on Branch, Maine.
+
+348
+00:47:12.960 --> 00:47:15.980
+Marcus M Darden: And it tells me that I just don't know about README.
+
+349
+00:47:17.040 --> 00:47:19.870
+Marcus M Darden: Anything else that I already put on there?
+
+350
+00:47:20.010 --> 00:47:21.030
+Marcus M Darden: is good.
+
+351
+00:47:27.970 --> 00:47:31.369
+Marcus M Darden: There's some pretty particular ways you're supposed to make your GIF messages.
+
+352
+00:47:32.980 --> 00:47:38.999
+Marcus M Darden: You're supposed to use descriptive verbs, like I did here. It said, add notes file.
+
+353
+00:47:39.840 --> 00:47:41.120
+Marcus M Darden: And so…
+
+354
+00:47:41.290 --> 00:47:55.039
+Marcus M Darden: The convention for git commit messages is to have this declarative statement, and you see here, you should think of that statement as being able to be read as, accepting this commit will…
+
+355
+00:47:56.580 --> 00:47:57.870
+Marcus M Darden: your message.
+
+356
+00:47:59.070 --> 00:48:02.509
+Marcus M Darden: So your message shouldn't be, I deleted so-and-so.
+
+357
+00:48:02.750 --> 00:48:21.670
+Marcus M Darden: Right? Because then that would read like, accepting this commit, well, I deleted so-and-so. That doesn't make a whole lot of sense. So if you said, delete so-and-so as the message, then it would read as, accepting this commit will delete so-and-so. So you can think that when you've got some systems in place, you start doing automation.
+
+358
+00:48:22.060 --> 00:48:32.820
+Marcus M Darden: That line is, like, the subject of an email, and so systems will kick that off as a subject of an email, and then you can put a body in there as well, and that will be put into the body.
+
+359
+00:48:32.900 --> 00:48:43.569
+Marcus M Darden: We'll show that when we get to it, but for now, we're good. So, you want to have one change per commit when possible, like, I only fixed this bug. I don't want to fix 10 bugs in one commit, I want to fix…
+
+360
+00:48:43.950 --> 00:48:59.889
+Marcus M Darden: 10 bugs and 10 commits. Super easy. Commits don't cost anything. You just say, git add, git commit, git add, git commit. So, try to do that, because then when you make a bunch of changes in one situation, and you want to undo part of that, it's much more challenging.
+
+361
+00:49:00.050 --> 00:49:14.760
+Marcus M Darden: Make a bunch of changes, and each one lives in their own commit, and you want to undo part of it, you want to reorder it, Git will let you take some changes and reorder the changes. First I did this, and then I did that, and then I did the other thing, but wait, I should have done the other thing first, and then that, and then this.
+
+362
+00:49:15.080 --> 00:49:21.919
+Marcus M Darden: You can have Git do that, but only if you say this, that, and the other thing are three separate commits.
+
+363
+00:49:24.220 --> 00:49:25.180
+Marcus M Darden: All right.
+
+364
+00:49:26.350 --> 00:49:32.290
+Marcus M Darden: So, let's put some more notes in there, check the status, add and commit some more notes.
+
+365
+00:49:32.790 --> 00:49:46.329
+Marcus M Darden: So, I'm gonna do just that. Notice the double greater right here, because I do want to append to notes, I don't want to overwrite my notes. So, say, echo, new line, more notes.
+
+366
+00:49:46.690 --> 00:49:49.080
+Marcus M Darden: And dump that into notes.
+
+367
+00:49:49.620 --> 00:49:53.040
+Marcus M Darden: Git add… Oops.
+
+368
+00:49:58.580 --> 00:50:11.579
+Marcus M Darden: Oh, I just edited it, but you see it? Git status, there we go. So now, I added it. So, here we go, I added it, but my demo didn't add it, so I can undo that. So I can say, git restore dash dash staged
+
+369
+00:50:12.630 --> 00:50:20.969
+Marcus M Darden: notes.txt, so… Right now, my working directory copy is the same as my staged copy.
+
+370
+00:50:21.550 --> 00:50:38.970
+Marcus M Darden: So when I do this restore, it's gonna override my working directory copy with the stage copy, which makes no difference. But it also removes it from the staging area, so then I can't commit it unless I do another add. So here I've done it, now if I check a git status, you'll see that it has been modified
+
+371
+00:50:41.530 --> 00:50:46.879
+Marcus M Darden: But it is not staged for commit. Change is not staged for commit.
+
+372
+00:50:47.120 --> 00:51:00.379
+Marcus M Darden: And if I want to, I have to get add file, git restore file. Like I said, Git is super great about saying, hey, this is what you probably want to do, you want to do some stuff like this? Here's the command, git add file, git restore file. Great, because, you know why? Notes has been modified.
+
+373
+00:51:00.380 --> 00:51:12.639
+Marcus M Darden: There's the version that's in the repo, and then there's the version that's in my working directory, and they are different. If you like those changes, you should keep them by doing a git add, git restore. The untracked file, which is README, still lives out there, we'll deal with that.
+
+374
+00:51:12.640 --> 00:51:20.039
+Marcus M Darden: Right about now. So, I can say that's not staged for commit. What if I want to add the README, get add readme.
+
+375
+00:51:20.070 --> 00:51:25.390
+Marcus M Darden: Git commit minus M, add README to repo.
+
+376
+00:51:27.910 --> 00:51:29.659
+Marcus M Darden: I do a git status.
+
+377
+00:51:31.860 --> 00:51:40.249
+Marcus M Darden: And you see, I still have this modified notes, and I haven't made a change yet. So, I'm gonna go there and update that, say, get
+
+378
+00:51:40.510 --> 00:51:48.179
+Marcus M Darden: And here's where I said you could sort of go around the staging area. I'll show you the goods right now. Git commit minus M,
+
+379
+00:51:48.660 --> 00:51:50.030
+Marcus M Darden: Add more notes.
+
+380
+00:51:52.370 --> 00:51:58.189
+Marcus M Darden: And if I do that, it's gonna be like, you haven't added anything to the staging area, so I can't do that for you.
+
+381
+00:51:58.400 --> 00:52:10.520
+Marcus M Darden: It did nothing. You can tell that it did nothing, because it told me stuff. If it had done something, it wouldn't have said anything. So, if I really want to do that by avoiding the staging area, I can just add notes.txt to this line.
+
+382
+00:52:10.600 --> 00:52:19.090
+Marcus M Darden: But only if notes.txt is already in the repo. If it's untracked, I can't do it. If it's untracked, I have to do add.
+
+383
+00:52:19.090 --> 00:52:32.240
+Marcus M Darden: So this is what I was saying earlier, is you could go straight from changes in the working directory into the repo if I say git commit minus m with the message, and then, boom, those files. Then it puts them straight from the working directory.
+
+384
+00:52:32.460 --> 00:52:33.680
+Marcus M Darden: into the rebuild
+
+385
+00:52:34.360 --> 00:52:44.970
+Marcus M Darden: The staging area, remember, we move things into the staging area with add, but what I didn't say is, when you do a commit, it moves the stuff from the staging area into the repo.
+
+386
+00:52:45.070 --> 00:52:47.299
+Marcus M Darden: Thus, clearing your staging area.
+
+387
+00:52:47.520 --> 00:53:11.880
+Marcus M Darden: So this one just jumped past the staging area, but it's like I had it before, the staging area was empty. Now it says, add more notes, one file's changed, there were two insertions, there was a blank line, and a more notes line. So, if I do a git status at this point, like, hey, you're on Brant's main, there's nothing to commit, your working tree is clean, because every file that's in my working directory is an exact match to the name of the file that's in the repo.
+
+388
+00:53:12.830 --> 00:53:15.030
+Marcus M Darden: That's what they call a clean working directory.
+
+389
+00:53:15.680 --> 00:53:19.939
+Marcus M Darden: So… There we are.
+
+390
+00:53:20.820 --> 00:53:22.929
+Marcus M Darden: Add more notes, we've committed that.
+
+391
+00:53:23.310 --> 00:53:31.160
+Marcus M Darden: Let's check out what changed. So, git log is how you do that. If I can come here and say git log.
+
+392
+00:53:32.230 --> 00:53:38.529
+Marcus M Darden: And there you see all of the commits that I've done, and it goes in reverse order, so the one at the top is the most recent.
+
+393
+00:53:40.760 --> 00:53:50.860
+Marcus M Darden: That's when I added more notes. And you see the full hash up there. Looks like B30, V1EE2BD, blah blah blah blah blah. But, it's very unique.
+
+394
+00:53:51.360 --> 00:53:55.310
+Marcus M Darden: Because it looks at every character in that change.
+
+395
+00:53:55.510 --> 00:54:11.160
+Marcus M Darden: And it does that hash on all of that thing, and so you can't make this commit again unless you have exactly the exact same directory context. It looks at every file that it knows about, and hashes it into a single number, and that is the number.
+
+396
+00:54:12.750 --> 00:54:15.030
+Marcus M Darden: So, this is how we know that they're unique.
+
+397
+00:54:17.690 --> 00:54:30.630
+Marcus M Darden: Well, you see, I started by adding a notes file, then I added the README to the repo, and then I said, add more notes. But this is all of what's going on, what the history of this repo is. And we can also do this with a one-line version.
+
+398
+00:54:31.860 --> 00:54:38.889
+Marcus M Darden: And as you might imagine, it's just a briefer version of it. So get one line just gives me the short version of those hashes.
+
+399
+00:54:40.160 --> 00:54:41.390
+Marcus M Darden: And…
+
+400
+00:54:41.630 --> 00:54:47.939
+Marcus M Darden: It tells me about them. It also tells me where I am, that's what that head main thing is.
+
+401
+00:54:48.160 --> 00:54:54.130
+Marcus M Darden: Head is my current version of the repo that I'm working on, so if I want to go back in time.
+
+402
+00:54:54.680 --> 00:54:55.790
+Marcus M Darden: I can't.
+
+403
+00:54:57.980 --> 00:55:04.550
+Marcus M Darden: So, I say, get checked out, Head.
+
+404
+00:55:04.830 --> 00:55:06.960
+Marcus M Darden: But I'm gonna move back one commit.
+
+405
+00:55:11.470 --> 00:55:18.799
+Marcus M Darden: I'm in a detached head state, there's a bunch of warnings there. But now, I'm one commit back, so if I do an LS,
+
+406
+00:55:19.250 --> 00:55:30.130
+Marcus M Darden: I'll see notes and read me, but what's in them? Remember, I added more notes with the most recent commit, but now I've just undone that, so if I say cat notes.
+
+407
+00:55:30.490 --> 00:55:33.429
+Marcus M Darden: You see, it's still just the one-line version of that.
+
+408
+00:55:34.190 --> 00:55:42.550
+Marcus M Darden: If I say git checkout main, that puts me back in there, head, sorry. Git checkout head, now if I do cat notes.
+
+409
+00:55:43.620 --> 00:55:44.750
+Marcus M Darden: What?
+
+410
+00:55:47.720 --> 00:55:48.650
+Marcus M Darden: Yep.
+
+411
+00:55:51.540 --> 00:55:54.450
+Marcus M Darden: Check out Maine, that's what I really want to do. There we go.
+
+412
+00:55:54.600 --> 00:56:00.320
+Marcus M Darden: Previous head position was there, head is where it is. Okay, so now when I do that, you can see that my…
+
+413
+00:56:02.460 --> 00:56:04.270
+Marcus M Darden: Nodes file has two nodes in it.
+
+414
+00:56:05.510 --> 00:56:12.650
+Marcus M Darden: So, I kind of flubbed that one, so let me try it again. So, here's how I can go back in time. Say, git checkout.
+
+415
+00:56:12.800 --> 00:56:16.489
+Marcus M Darden: If I want to, I could say, git log one line.
+
+416
+00:56:17.490 --> 00:56:26.850
+Marcus M Darden: And I want to move back to before I added more notes. So I can say git checkout… 4B4FDD4.
+
+417
+00:56:27.420 --> 00:56:34.029
+Marcus M Darden: It says, hey, now I'm switched to that one, and if I do a… Pat of Notes.
+
+418
+00:56:34.200 --> 00:56:49.660
+Marcus M Darden: There's just hello in there. So I have gone back in time. I am in my working directory when that thing happened. If I want to get to where the current thing is, I still need to get back up to main, so I can just say git checkout main.
+
+419
+00:56:49.660 --> 00:56:54.609
+Marcus M Darden: And now, if I say, well, no, show me what's in the file now, you see that there's two lines, and so…
+
+420
+00:56:54.840 --> 00:57:11.209
+Marcus M Darden: Git is editing this file for me, taking me back in time, and it's not just this file, it's every file in the directory. So you can say, hey, I'd like to jump back to this project 2 years ago, and you might not even recognize the directory structure, because so many things have been changed and added and moved in and out, but
+
+421
+00:57:11.210 --> 00:57:26.830
+Marcus M Darden: all of that history is there, and Git can instantly jump you to any point that you've ever saved. Every single commit can be revisited, and you can live from there, you can jump off from there, you can edit, you can return yourself back to, okay, I just want to skip all of those new changes.
+
+422
+00:57:26.830 --> 00:57:33.669
+Marcus M Darden: Make this be the new current, you can do all kinds of things. So, there we go. We have gotten through…
+
+423
+00:57:34.520 --> 00:57:42.249
+Marcus M Darden: log, that's what it looks like. You can do some more stuff here, one line and graph decorate, so get…
+
+424
+00:57:42.770 --> 00:57:47.550
+Marcus M Darden: Log… one line, Show me a graph.
+
+425
+00:57:48.050 --> 00:57:49.370
+Marcus M Darden: decorated.
+
+426
+00:57:50.930 --> 00:57:56.400
+Marcus M Darden: Doesn't look a whole lot different, it's got just these little… Asterisks over there.
+
+427
+00:57:56.880 --> 00:58:01.159
+Marcus M Darden: was. When you get a big project, and you start having branches.
+
+428
+00:58:02.330 --> 00:58:15.179
+Marcus M Darden: this will expand to show the different paths that exist in your code, however much it needs to. So, since it doesn't really expand, it doesn't expand much. So, for now, that's just a future pipe dream.
+
+429
+00:58:15.340 --> 00:58:16.280
+Marcus M Darden: Alright?
+
+430
+00:58:16.860 --> 00:58:23.930
+Marcus M Darden: Alright, safe undo. I talked about restore stage, this unstaged file, keeping your edits.
+
+431
+00:58:25.320 --> 00:58:29.830
+Marcus M Darden: Because you made edits, and then you staged them. If you unstaged them, you keep the edits.
+
+432
+00:58:34.010 --> 00:58:42.730
+Marcus M Darden: To discard an edit, and it says be careful there, just use restore without staged. Super dangerous, but that's how it is. You make mistakes.
+
+433
+00:58:42.800 --> 00:58:56.879
+Marcus M Darden: You can still use the recover from them, other than when you blow out code that you haven't committed yet, you can't recover from that. You just have to rewrite it. So, git restore will overwrite that notes from what's in the repo, not what's in the staging area.
+
+434
+00:58:58.730 --> 00:59:03.070
+Marcus M Darden: So we do want to avoid destructive history rewrites.
+
+435
+00:59:03.250 --> 00:59:19.010
+Marcus M Darden: So, somebody tells you to do a git reset hard, that should already sound a little dangerous, and it is. So, this takes us back in history and makes it impossible to move forward in history. So, if you do a git reset hard, you will lose forward work.
+
+436
+00:59:19.380 --> 00:59:33.220
+Marcus M Darden: And it is pretty comfortable, but it's a lot more painful. So, it's out there. Git push, that's when we're using remotes. You can overwrite some changes on a remote, even if you shouldn't. That's what that does.
+
+437
+00:59:33.820 --> 00:59:37.940
+Marcus M Darden: The last thing I think we're gonna tack on here is this gitignore file.
+
+438
+00:59:38.390 --> 00:59:57.520
+Marcus M Darden: So, we'll have some junk in our directories, especially on macOS. They like to put some little dot files in there, especially, you see this ipyNB checkpoints that maybe you've found that file in your directory. When you do a save while you're in a Python notebook, it puts a checkpoint into this file, into this folder.
+
+439
+00:59:58.690 --> 01:00:00.790
+Marcus M Darden: He said, okay, well, I don't want to commit those.
+
+440
+01:00:01.610 --> 01:00:12.060
+Marcus M Darden: How do I know to not commit them? Because every time I say status, it's like, hey, you changed something in this checkpoint. Like, I don't care, I never want to commit checkpoints. So there's a file named
+
+441
+01:00:12.290 --> 01:00:17.940
+Marcus M Darden: gitignore, hidden file again, and anything in there, it says we're not going to…
+
+442
+01:00:18.140 --> 01:00:26.009
+Marcus M Darden: even try to do that. Once we start running Python files, we'll get this PyCache directory, stuff gets written in there, the data's…
+
+443
+01:00:26.210 --> 01:00:38.630
+Marcus M Darden: store that macOS uses kind of gets written there from time to time, too. So you just kind of keep the junk out of there by putting it into a gitignore file. So, for instance, let me say I've got some
+
+444
+01:00:39.080 --> 01:00:47.600
+Marcus M Darden: This is my source code file. So I've got this, and maybe I do some work and this program runs, and it shoots out a file
+
+445
+01:00:53.300 --> 01:00:55.220
+Marcus M Darden: Called output.txt.
+
+446
+01:00:55.540 --> 01:01:03.499
+Marcus M Darden: It's very a poor form to put outputs into your repo, just because your repo is usually source code that can generate the outputs.
+
+447
+01:01:03.500 --> 01:01:26.990
+Marcus M Darden: So it's a waste of time. So, if I have it like this, now I do an LS, you see there's output, notes, and readme. If I do a git status, it's going to be like, hey, I haven't tracked this output.txt file. Do you want to put it in there? Do you want to put it in there? It's going to keep asking, do you want to put it in there till the end of time, because it sees something new and it wants to deal with it. So, you know what? I never want to do that, so I'm going to go ahead and echo that file name, output.txt.
+
+448
+01:01:26.990 --> 01:01:30.500
+Marcus M Darden: And I'm gonna dump it into another file called gitignore.
+
+449
+01:01:31.240 --> 01:01:37.659
+Marcus M Darden: What that does is it just tells git, ignore any file with that name. Now, when I type git status.
+
+450
+01:01:39.430 --> 01:01:41.970
+Marcus M Darden: Like, I don't care about your output.
+
+451
+01:01:42.080 --> 01:01:55.730
+Marcus M Darden: I do care about gitignore, it's still just a file, so Git wants to know about that, too. But typically, when you do this, you're meaning to do it on purpose, so I'll make those changes, then I'll say git add.giddy, and I'll say git add, sorry, commit.
+
+452
+01:01:57.360 --> 01:02:06.539
+Marcus M Darden: If I just hit git commit, it opens me up in a text editor, because it says, hey, you need a message there, so I'm going to add the message, which is, add, ignore file
+
+453
+01:02:07.810 --> 01:02:08.970
+Marcus M Darden: It's a repo.
+
+454
+01:02:09.400 --> 01:02:13.169
+Marcus M Darden: And then when I write and quit this, it saves it and makes the commit.
+
+455
+01:02:14.280 --> 01:02:22.640
+Marcus M Darden: Remember we said you could do something like git config dash dash local. I'm gonna do it local, because I don't want it everywhere.
+
+456
+01:02:23.000 --> 01:02:29.909
+Marcus M Darden: what do we say? Core.editor is code dash dash wait.
+
+457
+01:02:30.630 --> 01:02:36.980
+Marcus M Darden: So that was one of the ones from a previous slide, so that if you're wondering where that came from. So now, when I do this, let me,
+
+458
+01:02:38.100 --> 01:02:40.980
+Marcus M Darden: Echo more output.
+
+459
+01:02:42.250 --> 01:02:45.459
+Marcus M Darden: And stick that on the back of output.
+
+460
+01:02:45.640 --> 01:02:50.320
+Marcus M Darden: Now, if I say git, add, output.
+
+461
+01:03:01.260 --> 01:03:02.590
+Marcus M Darden: Oh.
+
+462
+01:03:04.560 --> 01:03:24.479
+Marcus M Darden: it's in gitignore. So, gitignore is like, no, I won't do that for you. I will not do that for you. So I was trying to get it to add output, and it won't, because I said ignore it. I was like, why is that not working? So it's, ignored. So, so let's say, I want to add something else. So, we said something like echo…
+
+463
+01:03:25.170 --> 01:03:26.680
+Marcus M Darden: Pie, cash.
+
+464
+01:03:28.010 --> 01:03:36.349
+Marcus M Darden: I'm gonna dump that on the end of my gitignore. All right? Git status says, hey, look, gitignore has been changed, so if I do a git add commit.
+
+465
+01:03:43.040 --> 01:03:45.210
+Marcus M Darden: Now, it kicks me open.
+
+466
+01:03:45.500 --> 01:03:58.149
+Marcus M Darden: a Visual Studio Code window to make this edit, because I said that's what we're doing. So, this is where I can edit my commit message. I'm gonna say something like, ignore Python…
+
+467
+01:03:58.450 --> 01:04:00.060
+Marcus M Darden: cache files.
+
+468
+01:04:01.080 --> 01:04:07.830
+Marcus M Darden: very descriptive, what I'm trying to do, it's… In that imperative mode.
+
+469
+01:04:09.710 --> 01:04:11.040
+Marcus M Darden: do this.
+
+470
+01:04:11.220 --> 01:04:16.920
+Marcus M Darden: Alright, so if I then, save and exit.
+
+471
+01:04:17.280 --> 01:04:18.870
+Marcus M Darden: You'll see that mic.
+
+472
+01:04:19.000 --> 01:04:20.309
+Marcus M Darden: Commit has been done.
+
+473
+01:04:21.000 --> 01:04:23.049
+Marcus M Darden: So now, if I do a git status.
+
+474
+01:04:23.650 --> 01:04:33.139
+Marcus M Darden: nothing to commit, I'm gonna ignore some things. So, it's set in the, where did it go?
+
+475
+01:04:39.780 --> 01:04:47.699
+Marcus M Darden: It said in here, add something like pycache, anything.py, I, pynb checkpoints, And… there we go.
+
+476
+01:04:49.290 --> 01:04:51.410
+Marcus M Darden: add… There we go.
+
+477
+01:04:51.520 --> 01:05:05.959
+Marcus M Darden: And it says here at the bottom, tip, add data files to Gitignore. Same sort of thing, you don't usually want to commit your data, you don't want to commit your outputs. You're trying to commit your work product, which is your source code, and any messages and notes about that source code, but not the input or output that it uses.
+
+478
+01:05:06.140 --> 01:05:07.050
+Marcus M Darden: Alright.
+
+479
+01:05:08.160 --> 01:05:11.330
+Marcus M Darden: I talked about adding a gitignore, we did that.
+
+480
+01:05:11.930 --> 01:05:26.100
+Marcus M Darden: And so, now we're at remotes. So this is what I asked you to do originally when I said clone the student repo, the W26 repo. You'd do something like this. This creates a subdirectory, wherever you are.
+
+481
+01:05:26.700 --> 01:05:28.800
+Marcus M Darden: So you would want to go into the courses.
+
+482
+01:05:29.760 --> 01:05:38.029
+Marcus M Darden: I think Rafe just released the, the project, so go to your course's EX291 directory, and then say git clone
+
+483
+01:05:39.790 --> 01:05:42.619
+Marcus M Darden: the project one. I think I can do that?
+
+484
+01:05:53.420 --> 01:05:55.790
+Marcus M Darden: I'm the right… There we go.
+
+485
+01:05:56.360 --> 01:06:02.840
+Marcus M Darden: Okay, so I'm gonna come up a level, and I'm in my EX291 directory, and I say git clone HTTPS
+
+486
+01:06:04.840 --> 01:06:14.480
+Marcus M Darden: And… github.com, x291staff, And I think it's called P1…
+
+487
+01:06:23.870 --> 01:06:25.010
+Marcus M Darden: Oh…
+
+488
+01:06:38.600 --> 01:06:41.580
+Marcus M Darden: I don't believe that works.
+
+489
+01:06:42.340 --> 01:06:53.759
+Marcus M Darden: I don't know, follow directions on Rape's post about how to get it down. That's typically how it works, I don't know why it's asking me for a username there. Normally, when you clone from HTTPS, it just lets you do so without
+
+490
+01:07:17.810 --> 01:07:21.980
+Marcus M Darden: Oh, I'm in the wrong place. He gives you another one. This is my directory on the whole thing.
+
+491
+01:07:22.840 --> 01:07:27.039
+Marcus M Darden: Okay, don't worry about it. He's got… he's got other information about what you should be doing, so…
+
+492
+01:07:27.400 --> 01:07:32.149
+Marcus M Darden: But if I wanted to clone this repo, I should be able to do this here, as I own it. I don't know why.
+
+493
+01:07:35.850 --> 01:07:38.599
+Marcus M Darden: Okay. So,
+
+494
+01:07:40.450 --> 01:07:47.950
+Marcus M Darden: Once you clone, remember we have these two commands, git pull and git push, which I said sound really opposite each other, they are not.
+
+495
+01:07:47.980 --> 01:08:04.689
+Marcus M Darden: Because git pull is actually a combination of git fetch, which is the dead opposite of git push. Git push goes from the local repo to the remote, git fetch goes from the remotes to the local repo. Git merge also sort of takes those changes that came from the,
+
+496
+01:08:04.830 --> 01:08:08.339
+Marcus M Darden: Remote, and integrates them into your current working directory.
+
+497
+01:08:08.960 --> 01:08:11.540
+Marcus M Darden: So that will change things for you from afar.
+
+498
+01:08:12.070 --> 01:08:21.549
+Marcus M Darden: So that's all we do with remote. We won't do that, and unless we're doing a clone, pull, or push, everything that you're doing in Git is local. Everything is on your machine.
+
+499
+01:08:22.960 --> 01:08:38.950
+Marcus M Darden: How do we get help? We've got git help, git help, and then whatever command you want to use. You can also use git command with dash dash help. It should break into a help update there, so I want to know how to do something like, for instance, get help rebase.
+
+500
+01:08:39.670 --> 01:08:48.810
+Marcus M Darden: tells me all about how to do rebasing, and that's a future topic, but you can see I've got all of the things. It says you can use slash to search.
+
+501
+01:08:49.569 --> 01:08:52.910
+Marcus M Darden: inside of this, and you can also use Q to get out.
+
+502
+01:08:53.160 --> 01:08:58.750
+Marcus M Darden: I say, get rebase dash dash help, You get the same thing?
+
+503
+01:08:59.560 --> 01:09:03.349
+Marcus M Darden: You can go with git rebase-H.
+
+504
+01:09:03.790 --> 01:09:05.960
+Marcus M Darden: I get a shorter version of it.
+
+505
+01:09:06.500 --> 01:09:11.289
+Marcus M Darden: So this one just says, okay, I'm just gonna show you all the flags, none of the discussion.
+
+506
+01:09:12.990 --> 01:09:17.410
+Marcus M Darden: So there's a few different ways that you can scrub up some help.
+
+507
+01:09:20.830 --> 01:09:22.419
+Marcus M Darden: Alright, try this.
+
+508
+01:09:26.180 --> 01:09:30.310
+Marcus M Darden: Git to a clean directory that is not inside of a Git repo.
+
+509
+01:09:30.580 --> 01:09:32.590
+Marcus M Darden: CD to that location.
+
+510
+01:09:37.340 --> 01:09:44.510
+Marcus M Darden: and create a repo, right? You get to a place that's not inside there, then you create a new fi- a new folder with make dir.
+
+511
+01:09:46.060 --> 01:09:50.140
+Marcus M Darden: Create a repo, remember we said we're going to use git init?
+
+512
+01:09:50.640 --> 01:09:52.549
+Marcus M Darden: To create an empty repo.
+
+513
+01:09:55.560 --> 01:10:07.360
+Marcus M Darden: Edit a file, you saw how I did it, you can also do it with code, sorry, VS Code, or you can do it with any other editor you want. Edit the file, do a commit, edit, stage, commit, edit, stage, commit.
+
+514
+01:10:09.470 --> 01:10:13.490
+Marcus M Darden: So, add a file and commit it, then edit it, stage it, and commit it.
+
+515
+01:10:15.740 --> 01:10:17.160
+Marcus M Darden: I managed to check out history.
+
+516
+01:11:29.650 --> 01:11:31.249
+Marcus M Darden: Deeds suck, just let me know.
+
+517
+01:11:38.680 --> 01:11:41.070
+Marcus M Darden: I realized I hadn't had a mic on, so…
+
+518
+01:11:41.560 --> 01:11:44.210
+Marcus M Darden: Might have a rough transcript from today.
+
+519
+01:11:46.080 --> 01:11:48.969
+Marcus M Darden: Microphone now. Check, check.
+
+520
+01:17:36.310 --> 01:17:41.620
+Marcus M Darden: Alright, getting low on minutes here. I did all of those steps.
+
+521
+01:17:41.770 --> 01:17:49.139
+Marcus M Darden: You can see it up there, I started with making some directory called exercise, I changed into the directory, then I did a git init.
+
+522
+01:17:49.340 --> 01:18:07.790
+Marcus M Darden: Then I edited the file, which I did with Echo, but you could do that with any text editor. Then I did git add of that file, and you see me use these shortcuts up there, too, if that's a little confusing to you. You see that exclamation point dollar sign? That just means use the very last term from the line above.
+
+523
+01:18:08.130 --> 01:18:11.980
+Marcus M Darden: So when I said, make Dur Exercise CD Bank dollar.
+
+524
+01:18:11.980 --> 01:18:36.749
+Marcus M Darden: That's the same as saying, make dir exercise CD exercise. And so you see, I typed CD bang dollar and hit enter, and then it was like, oh, you meant CD exercise, right? Yes, I did. And then when I said git init, and I said echo exercise into readme, and then I said git add bang dollar, which is the same thing as saying git add readme, which is what it told me there. And I said, yep, that's what I meant. I don't have to confirm it, it's just telling me
+
+525
+01:18:36.750 --> 01:18:37.580
+Marcus M Darden: what's happening.
+
+526
+01:18:37.860 --> 01:18:55.989
+Marcus M Darden: So after I did that, it said, create a repo, add a file, commit it, which I did there, and then it said, edit the file, stage it, and commit it again, which I did in those next three steps, and then it says check the history, which I was able to do by saying git log.
+
+527
+01:18:56.420 --> 01:19:13.539
+Marcus M Darden: So, I just copied all of that output into a text file. I'll dump that into the repo so that you can pull it down later for remembering things, adding notes. You should be able to do this, like, with your eyes closed, right? I should be able to create a new repo pretty easily, go into the directory, call git init.
+
+528
+01:19:14.280 --> 01:19:22.639
+Marcus M Darden: maybe edit and add the README so I know what I'm even doing here. Later on, then you can open up that directory in VS Code and start adding things to it.
+
+529
+01:19:22.720 --> 01:19:38.750
+Marcus M Darden: Or whatnot. If you have a directory that already has files in it that isn't a git repo, you still use git init. You just jump in there, and all of the files that are there will show up as untracked. You jump in the directory, say git init, now I have a repo, add everything in here, and then commit it.
+
+530
+01:19:39.430 --> 01:19:41.739
+Marcus M Darden: So, that's another thing that you can do.
+
+531
+01:19:42.130 --> 01:19:50.500
+Marcus M Darden: My 40-minute half lecture on Git has effectively eaten up all 80 of our minutes.
+
+532
+01:19:51.470 --> 01:19:57.330
+Marcus M Darden: So, here we are at our workflow loop. Edit, stage, commit.
+
+533
+01:19:57.510 --> 01:20:00.979
+Marcus M Darden: And then when we're starting to use something remote, that's when we do a push.
+
+534
+01:20:01.080 --> 01:20:16.950
+Marcus M Darden: But for now, we just edit, stage, commit, edit, stage, commit, edit, stage, commit, we're good. And that really is edit, get add, get commit. Edit, get add, get commit. Next topics, we'll talk about more about remotes, branching and merging, and we'll have to do some conflict resolution when you try to merge things.
+
+535
+01:20:16.950 --> 01:20:28.019
+Marcus M Darden: Git is really good at making things merge that were two different things, but it's not perfect. And so, when you try to merge two things that Git can't figure out how to do, it gives you what's known as a conflict and says.
+
+536
+01:20:28.020 --> 01:20:47.689
+Marcus M Darden: here, I don't know whether I should choose this text or that text, and you have to go in as the human and decide what to do. So this can happen when two people are editing the same file for different tasks on the same project. You might want to incorporate your changes without breaking theirs. And if it can't figure out how to do that, it will make you do it. That's what conflict resolution is.
+
+537
+01:20:47.690 --> 01:20:54.730
+Marcus M Darden: Time travel, we already looked at some of that. We looked at visiting the past, we haven't changed any of it yet, so we can do that later.
+
+538
+01:20:55.070 --> 01:20:56.160
+Marcus M Darden: Alright.
+
+539
+01:20:56.510 --> 01:21:00.449
+Marcus M Darden: So, some resources here. Learn Git Branching.
+
+540
+01:21:00.690 --> 01:21:14.919
+Marcus M Darden: And also the W3 Schools tutorial. Both of these are great places to learn more about Git. Learn Git branching is gonna get you into branches, so it's a great place to go once you figure… once you've got your base Git figured out.
+
+541
+01:21:15.740 --> 01:21:18.960
+Marcus M Darden: All right, last slide. Wrapped up.
+
+542
+01:21:19.380 --> 01:21:21.490
+Marcus M Darden: And… we're outta here.
+
+543
+01:21:23.410 --> 01:21:31.480
+Marcus M Darden: Any questions before we go? Did all of this work? How many people got this to work? Ish? Good. Some general nods?
+
+544
+01:21:32.330 --> 01:21:38.270
+Marcus M Darden: If you didn't, that's fine, talk to Rafe tomorrow, and he'll get you through this. You can come in.
+
+545
+01:21:39.450 --> 01:21:43.070
+Marcus M Darden: So, they're ready for their room, we gotta go. It's 421.
+
+546
+01:21:43.400 --> 01:21:50.270
+Marcus M Darden: So, alright, thanks. We did not get to Lecture 1 stuff like I told Rafe I would, but, he'll talk more about it in lab.
+

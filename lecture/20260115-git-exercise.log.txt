@@ -1,0 +1,29 @@
+(base) mmdarden@marcus-max eecs291 % mkdir exercise
+(base) mmdarden@marcus-max eecs291 % cd !$
+cd exercise
+(base) mmdarden@marcus-max exercise % git init
+Initialized empty Git repository in /Users/mmdarden/courses/eecs291/exercise/.git/
+(base) mmdarden@marcus-max exercise % echo "# Exercise" > README.md
+(base) mmdarden@marcus-max exercise % git add !$
+git add README.md
+(base) mmdarden@marcus-max exercise % git commit -m 'Add README to repo'
+[main (root-commit) e3b6c8f] Add README to repo
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+(base) mmdarden@marcus-max exercise % echo "\n## Notes about this exercise" >> README.md
+(base) mmdarden@marcus-max exercise % git add README.md
+(base) mmdarden@marcus-max exercise % git commit -m 'Extend the README'
+[main 0fd4639] Extend the README
+ 1 file changed, 2 insertions(+)
+(base) mmdarden@marcus-max exercise % git log
+commit 0fd4639a683e56d2688a3a9fbd50a618bd886ee2 (HEAD -> main)
+Author: Marcus M. Darden <mmdarden@umich.edu>
+Date:   Thu Jan 15 16:14:37 2026 -0500
+
+    Extend the README
+
+commit e3b6c8f3c7fac519c59dcab019ce80c99c5cc68e
+Author: Marcus M. Darden <mmdarden@umich.edu>
+Date:   Thu Jan 15 16:13:53 2026 -0500
+
+    Add README to repo
